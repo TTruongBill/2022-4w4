@@ -1,0 +1,28 @@
+/**
+theme name: ex1 Truong Tien Tien Bill
+Author: Truong Tien Tien Bill
+Description : Exercice dans le cadre du cours 4W4
+version : 1.0
+Requires PHP :7.4
+Licence: GNU General Public License v2 or later
+Text Domain : cidw-4w4
+*/
+
+/*----------------------------------- INITIALISATION -----------------*/
+@import "initialisation/normalize";
+@import "initialisation/largeurBoite";
+
+/*-----------------------------VARIABLES--------------------------*/
+@import "variables/color";
+@import "variables/structure";
+@import "variables/typo";
+
+/*----------------------------------- LAYOUT -----------------*/
+@import "layout/layout";
+/*----------------------------------- ELEMENTS -----------------*/
+@import "elements/links";
+/*----------------------------------- COMPOSANTES -----------------*/
+@import "composants/nav";
+@import "composants/entete";
+@import "composants/cours";
+@import "composants/footer";

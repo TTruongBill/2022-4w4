@@ -1,0 +1,52 @@
+.site {
+    background-color: $color__background-body;
+    color:rgb(0, 0, 0);
+}
+
+.site_main {
+    display: flex;
+    background-color: $color__background-main;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.main_titre {
+    font-size: 3rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.carte {
+    background-color: rgb(224, 241, 255);
+    border: 1px black solid;
+    border-radius: 2%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 20px;
+    @media screen and (min-width: $largeur__media-tablette) {
+        width: 45%;
+    }
+    @media screen and (min-width: $largeur__media-desktop) {
+        width: 28%;
+    }
+}
+
+
+.carte_titre {
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+}
+
+.carte_info {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.carte_contenu {
+    font-size: 1rem;
+    color: rgb(66, 66, 66);
+}
