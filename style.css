@@ -346,20 +346,12 @@ Layout general
 .site {
   display: -ms-grid;
   display: grid;
-  gap: 10px;
       grid-template-areas: "sidebar"	 "header" "main" "footer";
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 570px) {
   .site {
-    -ms-grid-columns: 200px auto;
-        grid-template-columns: 200px auto;
-        grid-template-areas: "header header" "sidebar main" "footer footer";
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .site {
+    gap: 10px;
     -ms-grid-columns: 200px auto;
         grid-template-columns: 200px auto;
         grid-template-areas: "header header" "sidebar main" "footer footer";
@@ -429,7 +421,7 @@ a:hover, a:active {
   padding-left: 30px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 570px) {
   .site_barre > nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -483,7 +475,7 @@ a:hover, a:active {
   text-decoration: none;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 570px) {
   #burger {
     display: none;
   }
@@ -500,10 +492,12 @@ a:hover, a:active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 35px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 570px) {
   .site_header {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -515,6 +509,7 @@ a:hover, a:active {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 35px;
   }
 }
 
@@ -525,12 +520,16 @@ a:hover, a:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
 }
 
 .site_header_title h1 {
   font-family: "Poppins", sans-serif;
-  font-size: clamp(1rem, 7vw, 16rem);
-  margin: 0 0 20px;
+  font-size: clamp(1rem, 5vw, 16rem);
+  margin: 10px 20px;
 }
 
 .site_header_title h2 {
@@ -547,12 +546,25 @@ a:hover, a:active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .site_header_util .icone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .site_header_util .recherche {
@@ -565,20 +577,47 @@ a:hover, a:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 98vw;
+}
+
+.site_header_util .recherche ::-webkit-input-placeholder {
+  color: #bbbbbb;
+  font-style: italic;
+}
+
+.site_header_util .recherche :-ms-input-placeholder {
+  color: #bbbbbb;
+  font-style: italic;
+}
+
+.site_header_util .recherche ::-ms-input-placeholder {
+  color: #bbbbbb;
+  font-style: italic;
+}
+
+.site_header_util .recherche ::placeholder {
+  color: #bbbbbb;
+  font-style: italic;
 }
 
 .site_header_util .recherche_input {
+  background-color: rgba(0, 41, 77, 0.253);
   outline: none;
   border: none;
-  padding: 2px;
+  padding: 3px;
+  width: 100%;
+  margin: 10px 0px 10px 10px;
 }
 
-.site_header_util .recherche_bouton {
-  width: 24px;
-  height: 24px;
+.site_header_util .recherche_button {
+  width: 24.5px;
+  height: 24.5px;
   outline: none;
   border: none;
-  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  position: relative;
+  right: 24px;
+  top: 2px;
 }
 
 .site {
@@ -626,15 +665,15 @@ a:hover, a:active {
   padding: 20px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 570px) {
   .carte {
-    width: 45%;
+    width: 100%;
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 900px) {
   .carte {
-    width: 28%;
+    width: 30%;
   }
 }
 

@@ -9,23 +9,16 @@
             <li>Lorem ipsum dolor quaerat?</li>
         </ul>
         <div class="footer_links">
-            <a href="#">Liens 1</a>
-            <a href="#">Liens 2</a>
-            <a href="#">Liens 3</a>
-            <a href="#">Liens 4</a>
-            <a href="#">Liens 5</a>
-            <a href="#">Liens 6</a> 
+        <?php wp_nav_menu(array("menu"=>"simple",
+                                "container"=>"nav")); 
+        ?>
         </div>
         <p class="footer_parag">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui totam consectetur magnam itaque minima soluta ipsa id placeat inventore tempora. Cum voluptate maxime quibusdam amet fuga sed optio. Repudiandae, expedita.</p>
     </section>
-    <div class="footer_choix">
-        <a href="#">Choix 1</a>
-        <a href="#">Choix 2</a>
-        <a href="#">Choix 3</a>
-        <a href="#">Choix 4</a>
-        <a href="#">Choix 5</a>
-    </div>
-    <p>Copyright &copy 2022 - Collège de Maisonneuve. Tous droits réservés </p>
+    <section class="footer_droit">
+       <p>Copyright &copy 2022 - Collège de Maisonneuve. Tous droits réservés </p>
+       
+    </section>
 </footer>		
 <?php wp_footer(); ?>
 

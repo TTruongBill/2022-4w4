@@ -1,6 +1,5 @@
 .site {
 	display: grid;
-    gap : 10px;
 	grid-template-areas:
         "sidebar"	
         "header"
@@ -9,15 +8,7 @@
 }
 @media screen and (min-width: $largeur__media-tablette) {
     .site {
-        grid-template-columns: ($size__site-sidebar) auto;
-        grid-template-areas:
-		"header header"
-		"sidebar main"
-		"footer footer";
-    }
-}
-@media screen and (min-width: $largeur__media-desktop) {
-    .site {
+        gap : 10px;
         grid-template-columns: ($size__site-sidebar) auto;
         grid-template-areas:
 		"header header"
