@@ -30,7 +30,10 @@
     @media screen and (min-width: $largeur__media-tablette) {
         width: 100%;
     }
-    @media screen and (min-width: $largeur__media-desktop) {
+    @media screen and (min-width: $largeur__media-desktop1) {
+        width: 45%;
+    }
+    @media screen and (min-width: $largeur__media-desktop2) {
         width: 30%;
     }
 }

@@ -618,6 +618,12 @@ a:hover, a:active {
 
 @media screen and (min-width: 900px) {
   .carte {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .carte {
     width: 30%;
   }
 }
