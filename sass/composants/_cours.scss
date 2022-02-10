@@ -12,7 +12,7 @@
 }
 
 .main_titre {
-    font-size: 3rem;
+    font-size: clamp(2rem, 3vw, 3rem);
     display: flex;
     width: 100%;
     justify-content: center;
