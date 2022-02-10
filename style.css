@@ -498,15 +498,27 @@ a:hover, a:active {
 
 .site_header_title h2 {
   font-family: "trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", sans-serif;
-  width: 80%;
   font-size: clamp(0.6rem, 2vw, 12rem);
   margin: 0;
 }
 
 .site_header_util {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
+}
+
+@media screen and (min-width: 570px) {
+  .site_header_util {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .site_header_util {
+    flex-direction: column;
+    align-items: start;
+  }
 }
 
 .site_header_util .icone {
@@ -514,6 +526,12 @@ a:hover, a:active {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (min-width: 900px) {
+  .site_header_util .icone {
+    margin-left: 10px;
+  }
 }
 
 .site_header_util .recherche {
@@ -529,6 +547,13 @@ a:hover, a:active {
   }
 }
 
+@media screen and (min-width: 900px) {
+  .site_header_util .recherche {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
 .site_header_util .recherche ::placeholder {
   color: #bbbbbb;
   font-style: italic;
@@ -540,7 +565,7 @@ a:hover, a:active {
   border: none;
   padding: 3px;
   width: 100%;
-  margin: 10px 0px 10px 10px;
+  margin: 0px 0px 10px 10px;
 }
 
 .site_header_util .recherche_button {
