@@ -399,12 +399,13 @@ a:hover, a:active {
 .site_barre > nav {
   display: none;
   flex-direction: column;
-  padding-left: 30px;
 }
 
 @media screen and (min-width: 570px) {
   .site_barre > nav {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -428,12 +429,12 @@ a:hover, a:active {
 
 .menu {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 16px;
+  padding: 0px;
 }
 
 .menu-item {
-  margin: 0;
+  margin: 0 0 0 10px;
   padding: 0;
 }
 
@@ -576,7 +577,7 @@ a:hover, a:active {
   background-color: rgba(255, 255, 255, 0);
   position: relative;
   right: 24px;
-  top: 2px;
+  bottom: 2px;
 }
 
 .site {
