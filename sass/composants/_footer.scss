@@ -9,23 +9,28 @@
     .footer {
 
         &_contact{
+            background-color: rgb(132,236,91);
             width: 30%;
             list-style-type: none;
+            border:1px solid white;
         }
 
-        &_links {
+        &_links{
+            background-color: rgb(82,185,159);
             width: 30%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            border:1px solid white;
 
         }
 
         &_parag{
+            background-color: rgb(172,55,123);
             width: 30%;
             text-align: justify;
-            padding-right: 40px;
+            border:1px solid white;
         }
     }
 
