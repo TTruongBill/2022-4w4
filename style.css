@@ -407,6 +407,41 @@ a:hover, a:active {
   outline: 0;
 }
 
+.site_footer a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #e14141;
+}
+
+.site_footer a:visited {
+  color: #0f8000;
+}
+
+.site_footer a:hover, .site_footer a:focus, .site_footer a:active {
+  color: #6e7019;
+}
+
+.site_footer a:focus {
+  outline: thin dotted;
+}
+
+.site_footer a:hover, .site_footer a:active {
+  outline: 0;
+}
+
+a {
+  color: #4169e1;
+}
+
+.site_footer a {
+  color: #e14141;
+}
+
 /*----------------------------------- COMPOSANTES -----------------*/
 #chk-burger {
   display: none;
@@ -782,16 +817,27 @@ a:hover, a:active {
   color: #c7c7c7;
 }
 
-.site_footer .footer_contact {
-  background-color: #84ec5b;
-  width: 30%;
-  list-style-type: none;
-  border: 1px solid white;
+.site_footer_info {
+  background-color: #383838;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.site_footer .footer_links {
-  background-color: #52b99f;
-  width: 30%;
+.site_footer_info .footer_contact {
+  background-color: #84ec5b;
+  width: 90%;
+  list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -808,53 +854,54 @@ a:hover, a:active {
   border: 1px solid white;
 }
 
-.site_footer .footer_links a svg {
-  color: inherit;
-}
-
-.site_footer .footer_links a:hover {
-  color: blue;
-}
-
-.site_footer .footer_links a:hover svg {
-  color: blue;
-}
-
-.site_footer .footer_links a:visited {
-  color: #15ff00;
-}
-
-.site_footer .footer_links a:visited svg {
-  color: #15ff00;
-}
-
-.site_footer .footer_links a:visited:hover {
-  color: #ff9100;
-}
-
-.site_footer .footer_links a:visited:hover svg {
-  color: #ff9100;
-}
-
-.site_footer .footer_parag {
-  background-color: #ac377b;
-  width: 30%;
-  text-align: justify;
-  border: 1px solid white;
-}
-
-.site_footer_info {
-  background-color: #383838;
+.site_footer_info .footer_links {
+  background-color: #52b99f;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid white;
+}
+
+.site_footer_info .footer_links a svg {
+  color: inherit;
+}
+
+.site_footer_info .footer_links a:hover {
+  color: blue;
+}
+
+.site_footer_info .footer_links a:hover svg {
+  color: blue;
+}
+
+.site_footer_info .footer_links a:visited {
+  color: #15ff00;
+}
+
+.site_footer_info .footer_links a:visited svg {
+  color: #15ff00;
+}
+
+.site_footer_info .footer_links a:visited:hover {
+  color: #ff9100;
+}
+
+.site_footer_info .footer_links a:visited:hover svg {
+  color: #ff9100;
+}
+
+.site_footer_info .footer_parag {
+  background-color: #ac377b;
+  width: 90%;
+  border: 1px solid white;
+  text-align: justify;
 }
 
 .site_footer_droit {
@@ -863,5 +910,14 @@ a:hover, a:active {
 
 .footer_menu_ul {
   list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 /*# sourceMappingURL=style.css.map */
