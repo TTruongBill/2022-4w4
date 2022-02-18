@@ -808,6 +808,34 @@ a:hover, a:active {
   border: 1px solid white;
 }
 
+.site_footer .footer_links a svg {
+  color: inherit;
+}
+
+.site_footer .footer_links a:hover {
+  color: blue;
+}
+
+.site_footer .footer_links a:hover svg {
+  color: blue;
+}
+
+.site_footer .footer_links a:visited {
+  color: #15ff00;
+}
+
+.site_footer .footer_links a:visited svg {
+  color: #15ff00;
+}
+
+.site_footer .footer_links a:visited:hover {
+  color: #ff9100;
+}
+
+.site_footer .footer_links a:visited:hover svg {
+  color: #ff9100;
+}
+
 .site_footer .footer_parag {
   background-color: #ac377b;
   width: 30%;
