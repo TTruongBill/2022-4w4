@@ -33,35 +33,6 @@
                 justify-content: center;
                 align-items: center;
                 border: 1px solid white;
-                
-                a{
-                    svg{
-                        color: inherit;
-                    }
-
-                    &:hover {
-                        color: blue;
-                        svg{
-                            color: blue;
-                        }
-                        
-                    }
-                    &:visited {
-                        color: rgb(21, 255, 0);
-                        svg{
-                            color: rgb(21, 255, 0);
-                        }
-                        
-                    }
-                    &:visited:hover {
-                        color: rgb(255, 145, 0);
-                        svg{
-                            color: rgb(255, 145, 0);
-                        }
-                        
-                    }
-                }
-               
             }
         
             &_parag {
