@@ -1,6 +1,7 @@
 #chk-burger  {
     display: none;
 }
+
 .site_barre > nav {
     display: none;
     flex-direction: column;    
@@ -10,6 +11,10 @@
         justify-content: center;
         align-items: center;
     }
+}
+
+.site_barre > nav > ul > li {
+    border: 1px solid red;
 }
 #burger {
     position : absolute;
@@ -23,11 +28,9 @@
 
 #chk-burger:checked ~ #burger ~ nav {
     display: flex;
+    flex-direction: column;    
 }
-.menu-principal-container {
-    padding: 30px 0 0 0;
-    
-}
+
 .menu {
     list-style: none;
     margin: 16px;

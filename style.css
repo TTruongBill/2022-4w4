@@ -461,6 +461,10 @@ a:hover, a:active {
   }
 }
 
+.site_barre > nav > ul > li {
+  border: 1px solid red;
+}
+
 #burger {
   position: absolute;
   -webkit-transform: rotate(0deg);
@@ -480,10 +484,10 @@ a:hover, a:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.menu-principal-container {
-  padding: 30px 0 0 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .menu {
@@ -579,7 +583,7 @@ a:hover, a:active {
 .site_header_title h2 {
   font-family: "trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", sans-serif;
   font-size: clamp(0.6rem, 2vw, 12rem);
-  margin: 0;
+  margin: 0px;
 }
 
 .site_header_util {
@@ -787,6 +791,73 @@ a:hover, a:active {
 }
 
 .carte_contenu {
+  font-size: 1rem;
+  color: #424242;
+}
+
+/*------------------SINGLE-POST-----------------*/
+.site_post_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #bbefff;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main_post_titre {
+  font-size: clamp(2rem, 3vw, 3rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.carte_post {
+  background-color: #e0f1ff;
+  border: 1px black solid;
+  border-radius: 2%;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  padding: 20px;
+  height: auto;
+}
+
+.carte_post_info {
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.carte_post_contenu {
   font-size: 1rem;
   color: #424242;
 }
