@@ -463,6 +463,8 @@ a:hover, a:active {
 
 .site_barre > nav > ul > li {
   border: 1px solid red;
+  background-color: #e4e4e4;
+  margin: 5px;
 }
 
 #burger {
@@ -801,11 +803,16 @@ a:hover, a:active {
   display: -ms-flexbox;
   display: flex;
   background-color: #bbefff;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main_post_titre {
@@ -821,14 +828,12 @@ a:hover, a:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0;
 }
 
 .carte_post {
   background-color: #e0f1ff;
   border: 1px black solid;
   border-radius: 2%;
-  margin: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -839,6 +844,13 @@ a:hover, a:active {
   width: 90%;
   padding: 20px;
   height: auto;
+  margin: 20px;
+}
+
+@media screen and (min-width: 570px) {
+  .carte_post {
+    margin: 40px 0 0 0;
+  }
 }
 
 .carte_post_info {
