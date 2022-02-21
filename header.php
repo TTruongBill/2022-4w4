@@ -10,7 +10,11 @@
 <body <?php body_class("site"); ?>>
 <header class="site_header">
     <section class="site_header_title">
-        <h1><?php echo get_bloginfo('name'); ?> </h1>
+        <h1>
+            <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+                <?php echo get_bloginfo('name'); ?>
+            </a>
+        </h1>
         <h2><?php echo get_bloginfo('description'); ?></h2>
     </section>
     <section class="site_header_util">

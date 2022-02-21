@@ -434,6 +434,26 @@ a:hover, a:active {
   outline: 0;
 }
 
+.site_header_title a {
+  color: #41e1ac;
+}
+
+.site_header_title a:visited {
+  color: #066100;
+}
+
+.site_header_title a:hover, .site_header_title a:focus, .site_header_title a:active {
+  color: #49949e;
+}
+
+.site_header_title a:focus {
+  outline: thin dotted;
+}
+
+.site_header_title a:hover, .site_header_title a:active {
+  outline: 0;
+}
+
 /*----------------------------------- COMPOSANTES -----------------*/
 #chk-burger {
   display: none;
@@ -711,6 +731,28 @@ a:hover, a:active {
   bottom: 2px;
 }
 
+@-webkit-keyframes anim-entete {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+@keyframes anim-entete {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
 .site {
   background-color: white;
   color: black;
@@ -966,5 +1008,71 @@ a:hover, a:active {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+/*-------------------------------------ANIMATION ----------------*/
+.animation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.animation_bloc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: blue;
+  color: white;
+  font-size: 3rem;
+  -webkit-animation: anim-entete 1s forwards;
+          animation: anim-entete 1s forwards;
+}
+
+.animation_bloc:nth-of-type(1) {
+  -webkit-animation: anim-entete 1s 0s forwards;
+          animation: anim-entete 1s 0s forwards;
+}
+
+.animation_bloc:nth-of-type(2) {
+  -webkit-animation: anim-entete 1s .25s forwards;
+          animation: anim-entete 1s .25s forwards;
+}
+
+.animation_bloc:nth-of-type(3) {
+  -webkit-animation: anim-entete 1s .50s forwards;
+          animation: anim-entete 1s .50s forwards;
+}
+
+.animation_bloc:nth-of-type(4) {
+  -webkit-animation: anim-entete 1s .75s forwards;
+          animation: anim-entete 1s .75s forwards;
+}
+
+.animation_bloc:nth-of-type(5) {
+  -webkit-animation: anim-entete 1s 1s forwards;
+          animation: anim-entete 1s 1s forwards;
+}
+
+@keyframes anim-entete {
+  0% {
+    -webkit-transform: translateY(-100vh);
+            transform: translateY(-100vh);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 /*# sourceMappingURL=style.css.map */
