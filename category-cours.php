@@ -12,14 +12,20 @@
                 $mon_titre_filtre = substr($mon_titre_filtre, 0, strrpos($mon_titre_filtre,'('));
                 $mon_contenu = get_the_excerpt();
             ?>
+            <?php the_post_thumbnail("thumbnail")?>
             <section class="carte">
-                <h3 class="carte_titre"><?php echo $mon_titre_filtre; ?></h3>
+                <h3 class="carte_titre">
+                    <a href="<?php echo get_permalink(); ?>">
+                        <?php echo $mon_titre_filtre; ?>
+                    </a>    
+               </h3>
                 <section class="carte_info">
                     <p class="carte_sigle"><?php echo $mon_sigle; ?></p>
                     <p class="carte_heure"><?php echo $mon_heure; ?></p>
                 </section>
                 <p class="carte_contenu"><?php echo $mon_contenu; ?></p>
             </section>
+            
 
             <?php endwhile; ?>
         <?php endif; ?>
