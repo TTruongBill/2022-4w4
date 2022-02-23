@@ -8,7 +8,8 @@
                 <?php the_title();?>
             </h1>
             <section class="carte_post">
-                <?php the_content();?>
+                <?php the_post_thumbnail("medium"); ?>
+                <?php echo get_the_content();?>
             </section>
         </article>
         

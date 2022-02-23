@@ -13,7 +13,14 @@
     align-items: center;
 
 }
+.site_carte_main {
+    display: flex;
+    background-color: $color__background-main;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
 
+}
 .site_main_front_page {
     display: flex;
     background-color: $color__background-main;
@@ -43,6 +50,7 @@
     display: flex;
     flex-direction: column;
     width: 90%;
+    height: auto;
     padding: 20px;
     @media screen and (min-width: $largeur__media-tablette) {
         width: 100%;

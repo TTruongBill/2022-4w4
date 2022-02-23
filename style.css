@@ -1,8 +1,8 @@
 /**
-theme name: ex2 Truong Tien Tien Bill
+theme name: TP1 Truong Tien Tien Bill
 Author: Truong Tien Tien Bill
 Author URI: https://github.com/k1polo/2022-4w4
-Description : Exercice 2 dans le cadre du cours 4W4
+Description : TP1 dans le cadre du cours 4W4
 version : 1.0
 Requires PHP :7.4
 Licence: GNU General Public License v2 or later
@@ -757,6 +757,19 @@ a:hover, a:active {
           align-items: center;
 }
 
+.site_carte_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #bbefff;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+
 .site_main_front_page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -805,6 +818,7 @@ a:hover, a:active {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 90%;
+  height: auto;
   padding: 20px;
 }
 
@@ -997,5 +1011,22 @@ a:hover, a:active {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.erreur-404 {
+  background-color: #e6faff;
+  width: 100%;
+}
+
+.erreur-404 h1 {
+  font-size: 5rem;
+}
+
+.erreur-404 h2 {
+  font-size: 2rem;
+}
+
+.erreur-404 p {
+  font-size: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
