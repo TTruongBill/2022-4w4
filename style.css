@@ -757,6 +757,19 @@ a:hover, a:active {
           align-items: center;
 }
 
+.site_carte_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #bbefff;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+
 .site_main_front_page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -805,6 +818,7 @@ a:hover, a:active {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 90%;
+  height: auto;
   padding: 20px;
 }
 
