@@ -21,10 +21,11 @@
         ?>
         </div>
         <p class="footer_parag">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui totam consectetur magnam itaque minima soluta ipsa id placeat inventore tempora. Cum voluptate maxime quibusdam amet fuga sed optio. Repudiandae, expedita.</p>
+
+        <?php get_search_form(); ?>
     </section>
     <section class="site_footer_droit">
        <p>Copyright &copy 2022 - Collège de Maisonneuve. Tous droits réservés </p>
-       
     </section>
 </footer>		
 <?php wp_footer(); ?>

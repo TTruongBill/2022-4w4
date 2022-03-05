@@ -12,8 +12,8 @@
 
 ?>
 <?php get_header() ?>
-<main class="site_main">
-    <h1 class="site_main_titre">
+<main class="site_main_search">
+    <h1 class="site_main_search_titre">
         Résultats de la recherche
     </h1>
     <?php if(have_posts()): ?>

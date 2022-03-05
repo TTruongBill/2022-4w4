@@ -1,3 +1,17 @@
+.site_main_search {
+    display: flex;
+    background-color: $color__background-main;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 20px;
+
+    &_titre {
+        display: flex;
+        align-items: center;
+    }
+}
+
 .recherche {
     display: flex;
     align-items: center;
@@ -5,10 +19,9 @@
     width: 98vw;
 
     @media screen and (min-width: $largeur__media-tablette){
-        width: 30vw;
+        width: 100%;
     }
     @media screen and (min-width: $largeur__media-desktop1){
-        width: 100%;
         justify-content: space-around;
     }
 
