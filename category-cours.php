@@ -2,6 +2,9 @@
 <?php get_header(); ?>
     <main class="site_carte_main">
         <h2 class="main_titre">Liste des cours</h2>
+        <section class="post_filter">
+            <a href="">Session 1</a>
+        </section>
         <?php if(have_posts()):
             while(have_posts()): the_post();?>
             <?php
