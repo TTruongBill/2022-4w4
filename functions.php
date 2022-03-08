@@ -19,6 +19,7 @@ Function cidw_4W4_enregistre_mon_menu() {
         array(
             'principal' => esc_html__('Menu principal', 'cidw_4w4'),
             'footer' => esc_html__('Footer','cidw-4w4'),
+            'menu_lien_externe' => esc_html__('Menu lien externe', 'cidw_4w4' ),
         )
     );
 }
