@@ -4,7 +4,9 @@
         <h1 class="main_titre animation_titre">
             <?php the_title();?>
         </h1>
-        <?php the_content();?> 
+        <section class="animation_contenu">
+            <?php the_content();?> 
+        </section>
         <?php endwhile;?>
         <?php endif;?>
     
