@@ -1,6 +1,7 @@
 <footer class="site_footer">
     <section class="site_footer_info">
         <ul class="footer_contact">
+            <?php get_sidebar("pied_page_colonne_1") ?>
             <li>3 800, rue Sherbrooke Est Montréal</li>
             <li>(Québec) H1X 2A2</li>
             <li>514-254-7131</li>

@@ -15,8 +15,8 @@
                 $mon_titre_filtre = substr($mon_titre_filtre, 0, strrpos($mon_titre_filtre,'('));
                 $mon_contenu = get_the_excerpt();
             ?>
-            <?php the_post_thumbnail("thumbnail")?>
             <section class="carte">
+            <?php the_post_thumbnail("thumbnail")?>
                 <h3 class="carte_titre">
                     <a href="<?php echo get_permalink(); ?>">
                         <?php echo $mon_titre_filtre; ?>
