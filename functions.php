@@ -43,7 +43,7 @@ add_theme_support('widgets');
 /*-----------------------Enregistrement des sidebars--------*/
 
 function my_register_sidebars() {
-    /* Register the 'primary' sidebar. */
+    /* Register the 'footer' sidebar. */
     register_sidebar(
         array(
             'id'            => 'pied_page_colonne_1',
@@ -56,6 +56,40 @@ function my_register_sidebars() {
         )
     );
     /* Repeat register_sidebar() code for additional sidebars. */
+    /* Register the '' sidebar. */
+    register_sidebar(
+        array(
+            'id'            => 'pied_page_colonne_2',
+            'name'          => __( 'Pied de page colonne 2' ),
+            'description'   => __( 'Colonne de pied de page' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        )
+    );
+    register_sidebar(
+        array(
+            'id'            => 'pied_page_colonne_3',
+            'name'          => __( 'Pied de page colonne 3' ),
+            'description'   => __( 'Colonne de pied de page' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        )
+    );
+    register_sidebar(
+        array(
+            'id'            => 'pied_page_ligne_1',
+            'name'          => __( 'Pied de page ligne 1' ),
+            'description'   => __( 'Colonne de pied de page' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        )
+    );
 }
 
 add_action( 'widgets_init', 'my_register_sidebars' );
