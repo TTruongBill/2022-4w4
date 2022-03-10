@@ -6,6 +6,7 @@
     </div>
     <div class="site_footer_ligne">
         <?php  wp_nav_menu(array("menu" => "lien_externe")); ?>
+        <?php get_sidebar("pied_page_ligne_1")?>
         <?php get_search_form(); ?>
     </div>
     <section class="site_footer_droit">
