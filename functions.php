@@ -19,7 +19,7 @@ Function cidw_4W4_enregistre_mon_menu() {
         array(
             'principal' => esc_html__('Menu principal', 'cidw_4w4'),
             'footer' => esc_html__('Footer','cidw-4w4'),
-            'menu_lien_externe' => esc_html__('Menu lien externe', 'cidw_4w4' ),
+            'lien_externe' => esc_html__('lien externe', 'cidw_4w4' ),
         )
     );
 }
@@ -61,17 +61,6 @@ function my_register_sidebars() {
         array(
             'id'            => 'pied_page_colonne_2',
             'name'          => __( 'Pied de page colonne 2' ),
-            'description'   => __( 'Colonne de pied de page' ),
-            'before_widget' => '<div id="%1$s" class="widget %2$s">',
-            'after_widget'  => '</div>',
-            'before_title'  => '<h3 class="widget-title">',
-            'after_title'   => '</h3>',
-        )
-    );
-    register_sidebar(
-        array(
-            'id'            => 'pied_page_colonne_3',
-            'name'          => __( 'Pied de page colonne 3' ),
             'description'   => __( 'Colonne de pied de page' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>',
