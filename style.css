@@ -754,6 +754,13 @@ a:hover, a:active {
   margin: 0;
 }
 
+.wp-block-social-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .erreur-404 {
   background-color: #e6faff;
   width: 100%;
