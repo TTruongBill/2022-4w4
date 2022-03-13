@@ -79,6 +79,17 @@ function my_register_sidebars() {
             'after_title'   => '</h3>',
         )
     );
+    register_sidebar(
+        array(
+            'id'            => 'pied_page_ligne_1',
+            'name'          => __( 'Pied de page ligne 1' ),
+            'description'   => __( 'Colonne de pied de page' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        )
+    );
 }
 
 add_action( 'widgets_init', 'my_register_sidebars' );
