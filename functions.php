@@ -81,8 +81,8 @@ function my_register_sidebars() {
     );
     register_sidebar(
         array(
-            'id'            => 'pied_page_ligne_1',
-            'name'          => __( 'Pied de page ligne 1' ),
+            'id'            => 'pied_page_ligne_2',
+            'name'          => __( 'Pied de page ligne 2' ),
             'description'   => __( 'Colonne de pied de page' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>',
