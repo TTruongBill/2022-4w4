@@ -3,13 +3,16 @@
 }
 
 .site_barre > nav {
-    display: none;
-    flex-direction: column;    
+    display: flex;
+    flex-direction: column; 
+    transform: translateX(-11vw);   
+    transition: transform 0.5s;
 
     @media screen and (min-width: $largeur__media-tablette) {
         display: flex;
         justify-content: center;
         align-items: center;
+        transform: translateX(0);   
     }
 }
 
@@ -19,9 +22,10 @@
     margin: 5px;
 }
 #burger {
-    position : absolute;
+    position : fixed;
     transform : rotate(0deg);
     transition : transform .3s;
+    z-index: 2;
 }
 
 #chk-burger:checked ~ #burger {
@@ -31,6 +35,7 @@
 #chk-burger:checked ~ #burger ~ nav {
     display: flex;
     flex-direction: column;    
+    transform: translateX(0vw);   
 }
 
 .menu {

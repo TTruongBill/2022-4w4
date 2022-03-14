@@ -9,7 +9,7 @@
                                         "container" => "nav",
                                         "container_class" => "footer_menu",
                                         "menu_class" => "footer_menu_ul")); ?>
-            </section>
+        </section>
         </section>  
         <section class="recherche"><?php get_search_form(); ?></section>
     </div>

@@ -439,8 +439,10 @@ a:hover, a:active {
 }
 
 .site_barre > nav {
-  display: none;
+  display: flex;
   flex-direction: column;
+  transform: translateX(-11vw);
+  transition: transform 0.5s;
 }
 
 @media screen and (min-width: 570px) {
@@ -448,6 +450,7 @@ a:hover, a:active {
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translateX(0);
   }
 }
 
@@ -458,9 +461,10 @@ a:hover, a:active {
 }
 
 #burger {
-  position: absolute;
+  position: fixed;
   transform: rotate(0deg);
   transition: transform .3s;
+  z-index: 2;
 }
 
 #chk-burger:checked ~ #burger {
@@ -470,6 +474,7 @@ a:hover, a:active {
 #chk-burger:checked ~ #burger ~ nav {
   display: flex;
   flex-direction: column;
+  transform: translateX(0vw);
 }
 
 .menu {
@@ -713,10 +718,6 @@ a:hover, a:active {
   padding: 10px 15px;
 }
 
-.site_footer_colonne .sidebar {
-  width: 100%;
-}
-
 .site_footer_colonne_info {
   margin: 20px 0;
   display: flex;
@@ -754,26 +755,6 @@ a:hover, a:active {
   border: #005577 1px solid;
 }
 
-.site_footer_colonne_info .footer_article .wp-block-latest-posts.wp-block-latest-posts__list {
-  list-style-type: none;
-  background-color: #8ac2e7;
-  padding: 10px 0;
-  margin: 0;
-  width: 100%;
-}
-
-.site_footer_colonne_info .footer_article .wp-block-latest-posts.wp-block-latest-posts__list li:hover {
-  background-color: #7ae0ff;
-}
-
-.site_footer_colonne_info .footer_article .wp-block-latest-posts.wp-block-latest-posts__list li {
-  margin: 0;
-}
-
-.site_footer_colonne_info .footer_article .wp-block-latest-posts.wp-block-latest-posts__list li a {
-  padding: 5px;
-}
-
 .site_footer_colonne_info .footer_lien {
   width: 90%;
   height: 100%;
@@ -785,13 +766,6 @@ a:hover, a:active {
   display: flex;
   flex-direction: column;
   padding: 20px;
-}
-
-.site_footer_ligne .sidebar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }
 
 .footer_menu_ul {
@@ -882,6 +856,37 @@ a:hover, a:active {
   position: relative;
   right: 24px;
   bottom: 2px;
+}
+
+.sidebar {
+  width: 100%;
+}
+
+.post_recent ul {
+  list-style-type: none;
+  background-color: #8ac2e7;
+  padding: 10px 0;
+  margin: 0;
+  width: 100%;
+}
+
+.post_recent li:hover {
+  background-color: #7ae0ff;
+}
+
+.post_recent li {
+  margin: 0;
+}
+
+.post_recent li a {
+  padding: 5px;
+}
+
+.logo_externe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 /*------------------SINGLE-POST-----------------*/
