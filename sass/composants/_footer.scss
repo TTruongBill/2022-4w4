@@ -1,3 +1,36 @@
+@mixin footerLink() {
+    ul {
+        list-style-type: none;
+        background-color: rgb(138, 194, 231);
+        padding: 10px 0;
+        margin: 0;
+        width: 100%;
+    }
+    
+
+    li:hover {
+        background-color: rgb(122, 224, 255);
+        
+    }
+    li {
+        margin: 0;
+
+        a {
+            padding: 5px;
+        }
+    }
+}
+
+@mixin footer_box(){
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: rgb(0, 85, 119) 1px solid ;
+}
+
 .site_footer {
     width: 97vw;
     display: flex;
@@ -32,14 +65,8 @@
 
                 &_adresse {
 
-                    height: 100%;
-                    width: 90%;
+                    @include footer_box();
                     list-style-type: none;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-start;
-                    align-items: flex-start;
-                    border: rgb(0, 85, 119) 1px solid ;
 
                     p{
                         background-color: rgb(138, 194, 231);
@@ -50,21 +77,16 @@
                 }
     
                 &_article {
-                    height: 100%;
-                    width: 90%;
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: flex-start;
+                    @include footer_box();
                     padding: 0;
                     margin: 0 20px;
-                    border: rgb(0, 85, 119) 1px solid;
                 }
             
                 &_lien {
-                    width: 90%;
                     height: 100%;
+                    width: 90%;
+                    border: rgb(0, 85, 119) 1px solid ;
                     text-align: start;
-                    border: rgb(0, 85, 119) 1px solid;
                 }
             }
         }
@@ -76,31 +98,47 @@
     &_ligne {
         display: flex;
         flex-direction: column;
-        padding: 20px;
+        align-items: center;
     }
 
     
 }
-
+/*----------------------------------- INITIALISATION -----------------*/
 .footer_menu{
+    @include footerLink();
+}
 
-    &_ul{
-    list-style-type: none;
-    background-color: rgb(138, 194, 231);
-    padding: 10px 0;
-    margin: 0;
 
-        li:hover {
-            background-color: rgb(122, 224, 255);
-            
-        }
-        li {
-            margin: 0;
-        }
-    }
+.sidebar {
+    width: 100%;
+}
+
+.post_recent {
+    @include footerLink();
+    
+}
+
+.logo_externe{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 
 
 
+.pages_utiles{
+    display: flex;
+    justify-content: center;
 
+    h3{
+        text-align: center;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
+}

@@ -2,27 +2,30 @@
     display: none;
 }
 
+.site_barre {
+    position: relative;
+}
 .site_barre > nav {
-    display: flex;
+    display: none;
     flex-direction: column; 
-    transform: translateX(-11vw);   
-    transition: transform 0.5s;
 
     @media screen and (min-width: $largeur__media-tablette) {
         display: flex;
         justify-content: center;
         align-items: center;
-        transform: translateX(0);   
+        transform: translateY(0);   
     }
 }
 
 .site_barre > nav > ul > li {
-    border: 1px solid red;
-    background-color: rgb(228, 228, 228);
+    border: 1px solid rgb(134, 186, 194);
+    background-color: rgb(179, 225, 230);
     margin: 5px;
 }
 #burger {
-    position : fixed;
+    position : absolute;
+    top: 5px;
+    left: 5px;
     transform : rotate(0deg);
     transition : transform .3s;
     z-index: 2;
@@ -34,8 +37,7 @@
 
 #chk-burger:checked ~ #burger ~ nav {
     display: flex;
-    flex-direction: column;    
-    transform: translateX(0vw);   
+    flex-direction: column; 
 }
 
 .menu {
