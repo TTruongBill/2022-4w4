@@ -16,7 +16,7 @@
     <div class="site_footer_ligne">
         <?php get_sidebar("pied_page_ligne_1")?>
         <?php get_sidebar("pied_page_ligne_2")?>
-        <p>Copyright &copy 2022 - Collège de Maisonneuve. Tous droits réservés </p>
+        <p>Copyright &copy 2022 - Truong, Tien Tien Bill. Tous droits réservés </p>
     </div>
 </footer>		
 <?php wp_footer(); ?>
