@@ -1,5 +1,8 @@
-a {
-	color: $color__link;
+@mixin links($color_link,
+			$color__link-visited,
+			$color__link-hover){
+
+	color: $color_link;
 
 	&:visited {
 		color: $color__link-visited;
@@ -19,4 +22,23 @@ a {
 	&:active {
 		outline: 0;
 	}
+	
 }
+
+a {
+	@include links($color__link, 
+					$color__link-visited,
+					$color__link-hover);
+}
+.site_footer a {
+	@include links($color__link_footer, 
+					$color__link_footer-visited, 
+					$color__link_footer-hover);
+}
+
+.site_header_title a{
+	@include links($color__link_header, 
+					$color__link_header-visited, 
+					$color__link_header-hover);
+}
+

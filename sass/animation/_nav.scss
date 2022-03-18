@@ -1,0 +1,13 @@
+.site_barre > nav {
+    animation: anim-menu 2s 0.5s backwards;
+}
+
+@keyframes anim-menu{
+    0% {
+        transform: translateY(-11vh);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

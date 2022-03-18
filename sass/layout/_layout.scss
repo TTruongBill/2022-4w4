@@ -5,6 +5,8 @@
         "header"
         "main"
 		"footer";
+
+    overflow-x: hidden;
 }
 @media screen and (min-width: $largeur__media-tablette) {
     .site {

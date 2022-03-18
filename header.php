@@ -10,7 +10,12 @@
 <body <?php body_class("site"); ?>>
 <header class="site_header">
     <section class="site_header_title">
-        <h1><?php echo get_bloginfo('name'); ?> </h1>
+        <?php the_custom_logo(); ?>
+        <h1>
+            <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+                <?php echo get_bloginfo('name'); ?>
+            </a>
+        </h1>
         <h2><?php echo get_bloginfo('description'); ?></h2>
     </section>
     <section class="site_header_util">
@@ -31,12 +36,7 @@
                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" color="#000"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
             </a>
         </div>
-        <form action="" class="recherche">
-            <input type="text" class="recherche_input" placeholder="Recherche">
-            <button class="recherche_button">
-                <svg width="14px" height="14px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" color= "rgb(187, 187, 187)";><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-            </button>
-        </form>
+            <?php get_search_form();?>
     </section>
 
 </header>
@@ -48,8 +48,14 @@
     viewBox="0 0 20 20" fill="currentColor" color="#000">
     <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
     </svg>
+    
 </label>
-        <?php wp_nav_menu(array("menu" => "principal",
-                                "container" => "nav"));?>
+        <?php 
+        $icone = '<svg width="15px" height="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" color="#000000"><path d="M4.97 11.03a.75.75 0 111.06-1.06L11 14.94V2.75a.75.75 0 011.5 0v12.19l4.97-4.97a.75.75 0 111.06 1.06l-6.25 6.25a.75.75 0 01-1.06 0l-6.25-6.25zm-.22 9.47a.75.75 0 000 1.5h14.5a.75.75 0 000-1.5H4.75z"></path></svg>';
+        wp_nav_menu(array("menu" => "principal",
+                          "container" => "nav",
+                          "link_before"=> $icone)); 
+                          
+                          ?>
 </section>
 

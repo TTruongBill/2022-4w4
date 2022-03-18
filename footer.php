@@ -1,24 +1,23 @@
 <footer class="site_footer">
-    <section class="footer_info">
-        <ul class="footer_contact">
-            <li>3 800, rue Sherbrooke Est Montréal</li>
-            <li>(Québec) H1X 2A2</li>
-            <li>514-254-7131</li>
-            <li>lorem ipsum dolor quaerat?</li>
-            <li>Lorem ipsum dolor quaerat?</li>
-            <li>Lorem ipsum dolor quaerat?</li>
-        </ul>
-        <div class="footer_links">
-        <?php wp_nav_menu(array("menu"=>"simple",
-                                "container"=>"nav")); 
-        ?>
-        </div>
-        <p class="footer_parag">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui totam consectetur magnam itaque minima soluta ipsa id placeat inventore tempora. Cum voluptate maxime quibusdam amet fuga sed optio. Repudiandae, expedita.</p>
-    </section>
-    <section class="footer_droit">
-       <p>Copyright &copy 2022 - Collège de Maisonneuve. Tous droits réservés </p>
-       
-    </section>
+    <div class="site_footer_colonne"> 
+        <section class="site_footer_colonne_info">
+            <section class="footer_adresse"><?php get_sidebar("pied_page_colonne_1")?></section>
+            <section class="footer_article"><?php get_sidebar("pied_page_colonne_2")?></section>
+            <section class="footer_lien">
+                <h3>Liens Externes</h3>
+                <?php wp_nav_menu(array("menu" => "lien_externe",
+                                        "container" => "nav",
+                                        "container_class" => "footer_menu",
+                                        "menu_class" => "footer_menu_ul")); ?>
+        </section>
+        </section>  
+        <section class="recherche"><?php get_search_form(); ?></section>
+    </div>
+    <div class="site_footer_ligne">
+        <?php get_sidebar("pied_page_ligne_1")?>
+        <?php get_sidebar("pied_page_ligne_2")?>
+        <p>Copyright &copy 2022 - Truong, Tien Tien Bill. Tous droits réservés </p>
+    </div>
 </footer>		
 <?php wp_footer(); ?>
 
