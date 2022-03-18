@@ -951,7 +951,6 @@ a:hover, a:active {
           align-items: center;
 }
 
-/*----------------------------------- INITIALISATION -----------------*/
 .footer_menu ul {
   list-style-type: none;
   background-color: #8ac2e7;
@@ -1010,6 +1009,20 @@ a:hover, a:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.logo_externe ul li {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.logo_externe ul li:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .pages_utiles {

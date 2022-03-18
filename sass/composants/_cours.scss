@@ -12,16 +12,16 @@
     justify-content: flex-start;
     padding: 20px;
     align-items: center;
-
 }
+
 .site_carte_main {
     display: flex;
     background-color: $color__background-main;
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
-
 }
+
 .site_main_front_page {
     display: flex;
     background-color: $color__background-main;
@@ -30,7 +30,6 @@
     justify-content: flex-start;
     padding: 20px;
     align-items: flex-start;
-
 }
 
 .main_titre {
@@ -43,6 +42,7 @@
 .site_main_front_page > p {
     font-size: clamp(1rem, 2vw, 1.4rem);
 }
+
 .info_extra {
     width: 100%;
     display: flex;
@@ -52,6 +52,7 @@
     font-weight: bold;
     font-size: clamp(1rem, 2vw, 1.4rem);
 }
+
 .carte {
     background-color: rgb(224, 241, 255);
     border: 1px black solid;
@@ -73,7 +74,6 @@
     }
 }
 
-
 .carte_titre {
     font-size: 1.5rem;
     color: rgb(0, 0, 0);
@@ -84,6 +84,7 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
 .carte_contenu {
     font-size: 1rem;
     color: rgb(66, 66, 66);
