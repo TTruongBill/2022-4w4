@@ -11,7 +11,9 @@
             $mon_contenu = get_the_excerpt();
         ?>
         <article class="site_post_main">
-            <?php the_post_thumbnail(); ?>
+            <div class="site_post_main_img">
+                <?php the_post_thumbnail(); ?>
+            </div>
             <h1 class="main_post_titre">
                 <?php echo $mon_titre_filtre;?>
             </h1>

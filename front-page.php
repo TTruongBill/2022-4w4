@@ -12,3 +12,8 @@
     
     </main>
 <?php get_footer(); ?>
+
+{/**php get_nav_menu(array(
+    "menu"=> "menu_accueil"
+    "container" => "nav"));
+    */}
