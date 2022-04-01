@@ -479,7 +479,7 @@ h3 {
 }
 
 h4 {
-  font-size: clamp(1rem, 2vw, 2.2rem);
+  font-size: clamp(1rem, 1.3vw, 2rem);
 }
 
 h5 {
@@ -914,7 +914,12 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 }
 
 .menu-categorie_cours-container .menu .menu-item {
-  margin: 0 15px;
+  padding: 10px;
+  margin: 15px 15px;
+  background-color: #b1d9ff;
+  border: 1px solid #78b5dd;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .menu-categorie_cours-container .menu .menu-item a {

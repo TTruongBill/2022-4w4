@@ -14,9 +14,13 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
             flex-wrap: wrap;
         }
         .menu-item { //li
-
-            margin : 0 15px;
-
+            padding: 10px;
+            margin : 15px 15px;
+            background-color: rgb(177, 217, 255);
+            border: 1px solid rgb(120, 181, 221);
+            border-radius: 10px;
+            text-align: center;
+            
              a {
                  text-decoration: none;
              }

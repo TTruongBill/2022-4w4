@@ -13,7 +13,7 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
           flex-direction: column;
 }
 
-@media screen and (min-width: 2) {
+@media screen and (min-width: 20px) {
   .menu-categorie_cours-container .menu {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -25,7 +25,12 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 }
 
 .menu-categorie_cours-container .menu .menu-item {
-  margin: 0 15px;
+  padding: 10px;
+  margin: 15px 15px;
+  background-color: #b1d9ff;
+  border: 1px solid #78b5dd;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .menu-categorie_cours-container .menu .menu-item a {
