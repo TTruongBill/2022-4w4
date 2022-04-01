@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
 theme name: TP1 Truong Tien Tien Bill
 Author: Truong Tien Tien Bill
@@ -449,6 +450,46 @@ a:hover, a:active {
   outline: 0;
 }
 
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h3, h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+h5, h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+h1 {
+  font-size: clamp(2rem, 3vw, 5rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 2.2vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.2rem, 2vw, 2.5rem);
+}
+
+h4 {
+  font-size: clamp(1rem, 1.3vw, 2rem);
+}
+
+h5 {
+  font-size: clamp(1rem, 1vw, 2rem);
+}
+
+h6 {
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
 /*----------------------------------- COMPOSANTES -----------------*/
 #chk-burger {
   display: none;
@@ -709,23 +750,8 @@ a:hover, a:active {
 }
 
 .site_main_front_page {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background-color: #bbefff;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   padding: 20px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 
 .main_titre {
@@ -762,6 +788,46 @@ a:hover, a:active {
   font-size: clamp(1rem, 2vw, 1.4rem);
 }
 
+.formation__liste {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formation__liste .web {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=globe-bold");
+}
+
+.formation__liste .jeu {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=games");
+}
+
+.formation__liste .comm {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=users");
+}
+
+.formation__liste .design {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=color_lens");
+}
+
+.formation__liste .utilitaire {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools-bold");
+}
+
+.formation__liste .video {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=device-camera-video");
+}
+
+.formation__liste .creation-3d {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=view_in_ar");
+}
+
 .carte {
   background-color: #e0f1ff;
   border: 1px black solid;
@@ -777,6 +843,8 @@ a:hover, a:active {
   width: 90%;
   height: auto;
   padding: 20px;
+  background-repeat: no-repeat;
+  background-position: 97% 3%;
 }
 
 @media screen and (min-width: 570px) {
@@ -818,6 +886,44 @@ a:hover, a:active {
 .carte_contenu {
   font-size: 1rem;
   color: #424242;
+}
+
+/* --------------------------------------------------------------
+Navigation pour la page category.php   boutons de catégorie  groupe-1
+----------------------------------------------------------------- */
+.menu-categorie_cours-container .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 900px) {
+  .menu-categorie_cours-container .menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.menu-categorie_cours-container .menu .menu-item {
+  padding: 10px;
+  margin: 15px 15px;
+  background-color: #b1d9ff;
+  border: 1px solid #78b5dd;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.menu-categorie_cours-container .menu .menu-item a {
+  text-decoration: none;
 }
 
 .site_footer {
@@ -874,13 +980,28 @@ a:hover, a:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+  .site_footer_colonne_info {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .site_footer_colonne_info .footer_adresse {
@@ -928,7 +1049,13 @@ a:hover, a:active {
           align-items: flex-start;
   border: #005577 1px solid;
   padding: 0;
-  margin: 0 20px;
+  margin: 20px 0;
+}
+
+@media screen and (min-width: 900px) {
+  .site_footer_colonne_info .footer_article {
+    margin: 0 20px;
+  }
 }
 
 .site_footer_colonne_info .footer_lien {
@@ -1173,6 +1300,11 @@ a:hover, a:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.site_post_main_img img {
+  width: 100%;
+  height: 100%;
 }
 
 .main_post_titre {

@@ -4,7 +4,7 @@
             <section class="footer_adresse"><?php get_sidebar("pied_page_colonne_1")?></section>
             <section class="footer_article"><?php get_sidebar("pied_page_colonne_2")?></section>
             <section class="footer_lien">
-                <h3>Liens Externes</h3>
+                <h4>Liens Externes</h4>
                 <?php wp_nav_menu(array("menu" => "lien_externe",
                                         "container" => "nav",
                                         "container_class" => "footer_menu",
