@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /**
-theme name: TP1 Truong Tien Tien Bill
+theme name: Exer3 Truong Tien Tien Bill
 Author: Truong Tien Tien Bill
 Author URI: https://github.com/k1polo/2022-4w4
-Description : TP1 dans le cadre du cours 4W4
+Description : Exer3 dans le cadre du cours 4W4
 version : 1.0
 Requires PHP :7.4
 Licence: GNU General Public License v2 or later
@@ -348,7 +348,10 @@ Layout general
 .site {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "sidebar"	 "header" "main" "footer";
+      grid-template-areas: "sidebar"	
+ "header"
+ "main"
+ "footer";
   overflow-x: hidden;
 }
 
@@ -357,7 +360,9 @@ Layout general
     gap: 10px;
     -ms-grid-columns: 200px auto;
         grid-template-columns: 200px auto;
-        grid-template-areas: "header header" "sidebar main" "footer footer";
+        grid-template-areas: "header header"
+ "sidebar main"
+ "footer footer";
   }
 }
 
