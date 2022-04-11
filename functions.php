@@ -47,9 +47,9 @@ add_filter("wp_nav_menu_objects","cidw_4w4_filtre_le_menu");
 add_theme_support('post-thumbnails');
 add_theme_support('widgets');
 
-function prefix_nav_description($item_output, $item, $args) {
+function prefix_nav_description($item_output, $item) {
     if(!empty($item->description)) {
-        $item_output = str_replace( '<a/>',
+        $item_output = str_replace( '</a>',
         '<hr><span class="menu-item-description">' . $item->description . '</span></a>',
         $item_output);
     }

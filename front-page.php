@@ -1,8 +1,12 @@
 <?php get_header(); ?>
     <main class="site_main_front_page">
-        <section class="pages_important">
+        <section class="pages_important">  
             <div class="bloc_important">
                 <h3>Le département TIM</h3>
+                <?php
+                wp_nav_menu(array('menu'=>"menu_accueil",
+                                    "container"=>"nav"));
+            ?>    
             </div>
             <div class="bloc_important">
                 <h3>Les événements</h3>

@@ -14,7 +14,7 @@
         "sass/composants/_nav.scss",
         "sass/composants/_entete.scss",
         "sass/composants/_cours.scss",
-        "sass/composants/navigation_categorie_cours.scss",
+        "sass/composants/_nav_categorie_cours.scss",
         "sass/composants/_footer.scss",
         "sass/composants/_erreur_404.scss",
         "sass/composants/_recherche.scss",
