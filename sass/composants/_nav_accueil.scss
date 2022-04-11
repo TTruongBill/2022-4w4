@@ -1,8 +1,9 @@
-.menu-accueil-container {
+.menu-accueil-container {//nav
 
     .menu {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-around;  
+        flex-wrap: wrap;
 
         .menu-item {
             width: 15%;

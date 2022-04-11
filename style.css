@@ -926,6 +926,39 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   text-decoration: none;
 }
 
+.menu-accueil-container .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menu-accueil-container .menu .menu-item {
+  width: 15%;
+  padding: 10px;
+  background-color: #68c8ff;
+}
+
+.menu-accueil-container .menu .menu-item a {
+  color: red;
+  font: 1.5rem;
+}
+
+.menu-accueil-container .menu .menu-item a .menu-item-description {
+  font-size: 1rem;
+}
+
+.menu-accueil-container .menu .menu-item:hover {
+  background-color: blue;
+}
+
+.menu-accueil-container .menu .menu-item:hover a {
+  color: green;
+}
+
 .site_footer {
   width: 97vw;
   display: -webkit-box;
