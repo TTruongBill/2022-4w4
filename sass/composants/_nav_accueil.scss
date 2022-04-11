@@ -16,17 +16,31 @@
             margin: 10px;
             background-color: $color_bouton_background;
             border-radius: 10%;
-            text-align: center;
-
+            
+            
             @media screen and (min-width: $largeur__media-desktop1){
                 width: 20%;
                 margin: 0;
             }
             a{
                 color: $color_bouton_color;
-                font: 1.5rem;
+                font-size: 1.5rem;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+                hr{
+                    width: 90%;
+                }
                 .menu-item-description{
                     font-size: 1rem;
+                }
+                .menu-item-icone{
+                    border: 1px solid black;
+                    width: 2rem;
+                    height: 2rem;
                 }
             }
 

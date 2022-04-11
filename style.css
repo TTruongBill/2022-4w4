@@ -971,7 +971,6 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   margin: 10px;
   background-color: #68c8ff;
   border-radius: 10%;
-  text-align: center;
 }
 
 @media screen and (min-width: 900px) {
@@ -983,11 +982,35 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 
 .menu-accueil-container .menu .menu-item a {
   color: #00497a;
-  font: 1.5rem;
+  font-size: 1.5rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-accueil-container .menu .menu-item a hr {
+  width: 90%;
 }
 
 .menu-accueil-container .menu .menu-item a .menu-item-description {
   font-size: 1rem;
+}
+
+.menu-accueil-container .menu .menu-item a .menu-item-icone {
+  border: 1px solid black;
+  width: 2rem;
+  height: 2rem;
 }
 
 .menu-accueil-container .menu .menu-item:hover {
