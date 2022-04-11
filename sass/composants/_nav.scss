@@ -59,10 +59,17 @@
    
 }
 @media screen and (min-width: $largeur__media-tablette) {
-    #burger {
+    .site #burger {
         display: none;
     }
-    .menu-principal-container{
+    .site .menu-principal-container{
         display: block;
+    }
+
+    .home #burger {
+        display: block;
+    }
+    .home .menu-principal-container{
+        display: none;
     }
 }

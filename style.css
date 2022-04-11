@@ -583,11 +583,17 @@ h6 {
 }
 
 @media screen and (min-width: 570px) {
-  #burger {
+  .site #burger {
     display: none;
   }
-  .menu-principal-container {
+  .site .menu-principal-container {
     display: block;
+  }
+  .home #burger {
+    display: block;
+  }
+  .home .menu-principal-container {
+    display: none;
   }
 }
 
@@ -757,6 +763,7 @@ h6 {
   background-color: #bbefff;
   padding: 20px;
   text-align: center;
+  width: 100vw;
 }
 
 .main_titre {
