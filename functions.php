@@ -50,7 +50,7 @@ add_theme_support('widgets');
 function prefix_nav_description($item_output, $item) {
     if(!empty($item->description)) {
         $item_output = str_replace( '</a>',
-        '<hr><span class="menu-item-description">' . $item->description . '</span></a>',
+        '<hr><span class="menu-item-description">' . $item->description . '</span><div class="menu-item-icone"></div></a>',
         $item_output);
     }
     return $item_output;

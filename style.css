@@ -888,6 +888,22 @@ h6 {
   color: #424242;
 }
 
+.bloc_important {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /* --------------------------------------------------------------
 Navigation pour la page category.php   boutons de catégorie  groupe-1
 ----------------------------------------------------------------- */
@@ -930,18 +946,39 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
+@media screen and (min-width: 900px) {
+  .menu-accueil-container .menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .menu-accueil-container .menu .menu-item {
-  width: 20%;
+  width: 100%;
   padding: 10px;
+  margin: 10px;
   background-color: #68c8ff;
   border-radius: 10%;
   text-align: center;
+}
+
+@media screen and (min-width: 900px) {
+  .menu-accueil-container .menu .menu-item {
+    width: 20%;
+    margin: 0;
+  }
 }
 
 .menu-accueil-container .menu .menu-item a {
