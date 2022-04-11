@@ -49,8 +49,8 @@ add_theme_support('widgets');
 
 function prefix_nav_description($item_output, $item, $args) {
     if(!empty($item->description)) {
-        $item_output = str_replace($args->link_after . '<a/>',
-        $args->link_after .'<hr><span class="menu-item-description">' . $item->description . '</span>' . '</a>',
+        $item_output = str_replace( '<a/>',
+        '<hr><span class="menu-item-description">' . $item->description . '</span></a>',
         $item_output);
     }
     return $item_output;
