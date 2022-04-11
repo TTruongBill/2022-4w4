@@ -752,6 +752,7 @@ h6 {
 .site_main_front_page {
   background-color: #bbefff;
   padding: 20px;
+  text-align: center;
 }
 
 .main_titre {
@@ -942,7 +943,7 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   text-decoration: none;
 }
 
-.menu-accueil-container .menu {
+.menu-accueil-container .menu, .menu-evenement-container .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -957,7 +958,7 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 }
 
 @media screen and (min-width: 900px) {
-  .menu-accueil-container .menu {
+  .menu-accueil-container .menu, .menu-evenement-container .menu {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -965,7 +966,7 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   }
 }
 
-.menu-accueil-container .menu .menu-item {
+.menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item {
   width: 100%;
   padding: 10px;
   margin: 10px;
@@ -974,13 +975,13 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 }
 
 @media screen and (min-width: 900px) {
-  .menu-accueil-container .menu .menu-item {
+  .menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item {
     width: 20%;
     margin: 0;
   }
 }
 
-.menu-accueil-container .menu .menu-item a {
+.menu-accueil-container .menu .menu-item a, .menu-evenement-container .menu .menu-item a {
   color: #00497a;
   font-size: 1.5rem;
   height: 100%;
@@ -999,25 +1000,25 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
           align-items: center;
 }
 
-.menu-accueil-container .menu .menu-item a hr {
+.menu-accueil-container .menu .menu-item a hr, .menu-evenement-container .menu .menu-item a hr {
   width: 90%;
 }
 
-.menu-accueil-container .menu .menu-item a .menu-item-description {
+.menu-accueil-container .menu .menu-item a .menu-item-description, .menu-evenement-container .menu .menu-item a .menu-item-description {
   font-size: 1rem;
 }
 
-.menu-accueil-container .menu .menu-item a .menu-item-icone {
+.menu-accueil-container .menu .menu-item a .menu-item-icone, .menu-evenement-container .menu .menu-item a .menu-item-icone {
   border: 1px solid black;
   width: 2rem;
   height: 2rem;
 }
 
-.menu-accueil-container .menu .menu-item:hover {
+.menu-accueil-container .menu .menu-item:hover, .menu-evenement-container .menu .menu-item:hover {
   background-color: #5cc3ff;
 }
 
-.menu-accueil-container .menu .menu-item:hover a {
+.menu-accueil-container .menu .menu-item:hover a, .menu-evenement-container .menu .menu-item:hover a {
   color: #005ec9;
 }
 
