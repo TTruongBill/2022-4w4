@@ -595,6 +595,9 @@ h6 {
   .home .menu-principal-container {
     display: none;
   }
+  .home .menu {
+    width: 90%;
+  }
 }
 
 .site_header {

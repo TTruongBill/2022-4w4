@@ -117,15 +117,13 @@ function trouve_la_categorie($tableau){
     }
 }
 /*----------------Custom logo -----------*/
-function themename_custom_logo_setup() {
-    $defaults = array(
-        'height'               => 100,
-        'width'                => 400,
-        'flex-height'          => true,
-        'flex-width'           => true,
-        'header-text'          => array( 'site-title', 'site-description' ),
-        'unlink-homepage-logo' => true, 
-    );
+function cidw_4W4_add_theme_support(){
+    add_theme_support('post-thumbnails');
+    add_theme_support( 'custom-logo', array(
+        'height' =>100,
+        'width' =>100,
+    ) );
 }
-add_theme_support( 'custom-logo' );
+add_action('after_setup_theme', 'cidw_4W4_add_theme_support');
+
 ?>
