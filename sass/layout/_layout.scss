@@ -6,8 +6,8 @@
         "main"
 		"footer";
 
-    overflow-x: hidden;
-}
+        overflow-x: hidden;
+    }
 @media screen and (min-width: $largeur__media-tablette) {
     .site {
         gap : 10px;
@@ -16,6 +16,16 @@
 		"header header"
 		"sidebar main"
 		"footer footer";
+    }
+    .home {
+        grid-template-areas:
+        "sidebar sidebar"	
+        "header header"
+        "main main"
+		"footer footer";
+
+        overflow-x: hidden;
+
     }
 }
 .site_header {

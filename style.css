@@ -359,6 +359,10 @@ Layout general
         grid-template-columns: 200px auto;
         grid-template-areas: "header header" "sidebar main" "footer footer";
   }
+  .home {
+        grid-template-areas: "sidebar sidebar"	 "header header" "main main" "footer footer";
+    overflow-x: hidden;
+  }
 }
 
 .site_header {
