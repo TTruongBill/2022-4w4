@@ -937,13 +937,15 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 }
 
 .menu-accueil-container .menu .menu-item {
-  width: 15%;
+  width: 20%;
   padding: 10px;
   background-color: #68c8ff;
+  border-radius: 10%;
+  text-align: center;
 }
 
 .menu-accueil-container .menu .menu-item a {
-  color: red;
+  color: #00497a;
   font: 1.5rem;
 }
 
@@ -952,11 +954,11 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 }
 
 .menu-accueil-container .menu .menu-item:hover {
-  background-color: blue;
+  background-color: #5cc3ff;
 }
 
 .menu-accueil-container .menu .menu-item:hover a {
-  color: green;
+  color: #005ec9;
 }
 
 .site_footer {

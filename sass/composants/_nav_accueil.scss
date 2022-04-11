@@ -1,14 +1,16 @@
 .menu-accueil-container {//nav
 
-    .menu {
+    .menu {//ul
         display: flex;
         justify-content: space-around;  
         flex-wrap: wrap;
 
-        .menu-item {
-            width: 15%;
+        .menu-item {//li
+            width: 20%;
             padding: 10px;
             background-color: $color_bouton_background;
+            border-radius: 10%;
+            text-align: center;
             a{
                 color: $color_bouton_color;
                 font: 1.5rem;
