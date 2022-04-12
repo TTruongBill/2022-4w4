@@ -1,5 +1,6 @@
 .menu-accueil-container, .menu-evenement-container {//nav
-
+    display: flex;
+    justify-content: center;
     .menu {//ul
         display: flex;
         flex-direction: column;
@@ -10,6 +11,28 @@
             flex-direction: row;
         }
 
+        .accueil_cours .menu-item-icone{ 
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=eye");
+            
+        }
+        .accueil_aide .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=flame-bold");
+        }
+        .accueil_prof .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=bookmark");
+        }
+        .accueil_joindre .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=code-review-bold");
+        }
+        .accueil_journee .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=container-bold");
+        }
+        .accueil_porte .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools");
+        }
+        .accueil_projet .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=thumbsup");
+        }
         .menu-item {//li
             width: 100%;
             padding: 10px;
@@ -38,9 +61,13 @@
                     font-size: 1rem;
                 }
                 .menu-item-icone{
-                    border: 1px solid black;
+                    border-bottom: 1px solid black;
+                    
                     width: 2rem;
                     height: 2rem;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
                 }
             }
 

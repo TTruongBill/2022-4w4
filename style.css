@@ -529,7 +529,7 @@ h6 {
 
 .site_barre > nav > ul > li {
   border: 1px solid #86bac2;
-  background-color: #b3e6b3;
+  background-color: #c5f1ff;
   margin: 5px;
 }
 
@@ -957,6 +957,15 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   text-decoration: none;
 }
 
+.menu-accueil-container, .menu-evenement-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .menu-accueil-container .menu, .menu-evenement-container .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -978,6 +987,34 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
         -ms-flex-direction: row;
             flex-direction: row;
   }
+}
+
+.menu-accueil-container .menu .accueil_cours .menu-item-icone, .menu-evenement-container .menu .accueil_cours .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=eye");
+}
+
+.menu-accueil-container .menu .accueil_aide .menu-item-icone, .menu-evenement-container .menu .accueil_aide .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=flame-bold");
+}
+
+.menu-accueil-container .menu .accueil_prof .menu-item-icone, .menu-evenement-container .menu .accueil_prof .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bookmark");
+}
+
+.menu-accueil-container .menu .accueil_joindre .menu-item-icone, .menu-evenement-container .menu .accueil_joindre .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=code-review-bold");
+}
+
+.menu-accueil-container .menu .accueil_journee .menu-item-icone, .menu-evenement-container .menu .accueil_journee .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=container-bold");
+}
+
+.menu-accueil-container .menu .accueil_porte .menu-item-icone, .menu-evenement-container .menu .accueil_porte .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools");
+}
+
+.menu-accueil-container .menu .accueil_projet .menu-item-icone, .menu-evenement-container .menu .accueil_projet .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=thumbsup");
 }
 
 .menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item {
@@ -1023,9 +1060,12 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 }
 
 .menu-accueil-container .menu .menu-item a .menu-item-icone, .menu-evenement-container .menu .menu-item a .menu-item-icone {
-  border: 1px solid black;
+  border-bottom: 1px solid black;
   width: 2rem;
   height: 2rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .menu-accueil-container .menu .menu-item:hover, .menu-evenement-container .menu .menu-item:hover {
