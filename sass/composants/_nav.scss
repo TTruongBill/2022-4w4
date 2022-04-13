@@ -19,7 +19,7 @@
 
 .site_barre > nav > ul > li {
     border: 1px solid rgb(134, 186, 194);
-    background-color: rgb(179, 230, 179);
+    background-color: rgb(197, 241, 255);
     margin: 5px;
 }
 #burger {
@@ -59,10 +59,20 @@
    
 }
 @media screen and (min-width: $largeur__media-tablette) {
-    #burger {
+    .site #burger {
         display: none;
     }
-    .menu-principal-container{
+    .site .menu-principal-container{
         display: block;
+    }
+
+    .home #burger {
+        display: block;
+    }
+    .home .menu-principal-container{
+        display: none;
+    }
+    .home .menu {
+        width: 90%;
     }
 }

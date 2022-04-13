@@ -25,7 +25,8 @@
 .site_main_front_page {
     background-color: $color__background-main;
     padding: 20px;
-
+    text-align: center;
+    width: 100vw;
 }
 
 .main_titre {
@@ -122,4 +123,11 @@
 .carte_contenu {
     font-size: 1rem;
     color: rgb(66, 66, 66);
+}
+
+.bloc_important{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

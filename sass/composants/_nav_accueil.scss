@@ -1,0 +1,86 @@
+.menu-accueil-container, .menu-evenement-container {//nav
+    display: flex;
+    justify-content: center;
+
+    .menu {//ul
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;  
+        flex-wrap: wrap;
+
+        @media screen and (min-width: $largeur__media-desktop1){
+            flex-direction: row;
+        }
+
+        .accueil_cours .menu-item-icone{ 
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=eye");
+        }
+        .accueil_aide .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=flame-bold");
+        }
+        .accueil_prof .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=bookmark");
+        }
+        .accueil_joindre .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=code-review-bold");
+        }
+        .accueil_journee .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=container-bold");
+        }
+        .accueil_porte .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools");
+        }
+        .accueil_projet .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=thumbsup");
+        }
+        .menu-item {//li
+            width: 100%;
+            padding: 10px;
+            margin: 10px;
+            background-color: $color_bouton_background;
+            border-radius: 10%;      
+            @media screen and (min-width: $largeur__media-desktop1){
+                width: 20%;
+                margin: 0;
+            }
+            a{
+                color: $color_bouton_color;
+                font-size: 1.5rem;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+                hr{
+                    width: 90%;
+                }
+                .menu-item-description{
+                    font-size: 1rem;
+                }
+                .menu-item-icone{
+                    border-bottom: 1px solid black;
+                    width: 2rem;
+                    height: 2rem;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                    transform: scale(1) translateX(0px);
+                    transition: transform 0.3s;
+                    
+                }
+            }
+
+            &:hover {
+                background-color: $color_bouton_background--hover;
+                a{
+                    color: $color_bouton_color--hover;
+                }
+            }
+        }
+    }
+}
+
+.menu-item:hover ~ .menu-item-icone {
+    transform: translateY(10px);
+}

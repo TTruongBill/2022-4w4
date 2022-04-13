@@ -359,6 +359,11 @@ Layout general
         grid-template-columns: 200px auto;
         grid-template-areas: "header header" "sidebar main" "footer footer";
   }
+  .home {
+    gap: 0px;
+        grid-template-areas: "sidebar sidebar"	 "header header" "main main" "footer footer";
+    overflow-x: hidden;
+  }
 }
 
 .site_header {
@@ -525,7 +530,7 @@ h6 {
 
 .site_barre > nav > ul > li {
   border: 1px solid #86bac2;
-  background-color: #b3e6b3;
+  background-color: #c5f1ff;
   margin: 5px;
 }
 
@@ -579,11 +584,20 @@ h6 {
 }
 
 @media screen and (min-width: 570px) {
-  #burger {
+  .site #burger {
     display: none;
   }
-  .menu-principal-container {
+  .site .menu-principal-container {
     display: block;
+  }
+  .home #burger {
+    display: block;
+  }
+  .home .menu-principal-container {
+    display: none;
+  }
+  .home .menu {
+    width: 90%;
   }
 }
 
@@ -752,6 +766,8 @@ h6 {
 .site_main_front_page {
   background-color: #bbefff;
   padding: 20px;
+  text-align: center;
+  width: 100vw;
 }
 
 .main_titre {
@@ -888,6 +904,22 @@ h6 {
   color: #424242;
 }
 
+.bloc_important {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /* --------------------------------------------------------------
 Navigation pour la page category.php   boutons de catégorie  groupe-1
 ----------------------------------------------------------------- */
@@ -924,6 +956,136 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 
 .menu-categorie_cours-container .menu .menu-item a {
   text-decoration: none;
+}
+
+.menu-accueil-container, .menu-evenement-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu-accueil-container .menu, .menu-evenement-container .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (min-width: 900px) {
+  .menu-accueil-container .menu, .menu-evenement-container .menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.menu-accueil-container .menu .accueil_cours .menu-item-icone, .menu-evenement-container .menu .accueil_cours .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=eye");
+}
+
+.menu-accueil-container .menu .accueil_aide .menu-item-icone, .menu-evenement-container .menu .accueil_aide .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=flame-bold");
+}
+
+.menu-accueil-container .menu .accueil_prof .menu-item-icone, .menu-evenement-container .menu .accueil_prof .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bookmark");
+}
+
+.menu-accueil-container .menu .accueil_joindre .menu-item-icone, .menu-evenement-container .menu .accueil_joindre .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=code-review-bold");
+}
+
+.menu-accueil-container .menu .accueil_journee .menu-item-icone, .menu-evenement-container .menu .accueil_journee .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=container-bold");
+}
+
+.menu-accueil-container .menu .accueil_porte .menu-item-icone, .menu-evenement-container .menu .accueil_porte .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools");
+}
+
+.menu-accueil-container .menu .accueil_projet .menu-item-icone, .menu-evenement-container .menu .accueil_projet .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=thumbsup");
+}
+
+.menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item {
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  background-color: #68c8ff;
+  border-radius: 10%;
+}
+
+@media screen and (min-width: 900px) {
+  .menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item {
+    width: 20%;
+    margin: 0;
+  }
+}
+
+.menu-accueil-container .menu .menu-item a, .menu-evenement-container .menu .menu-item a {
+  color: #00497a;
+  font-size: 1.5rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-accueil-container .menu .menu-item a hr, .menu-evenement-container .menu .menu-item a hr {
+  width: 90%;
+}
+
+.menu-accueil-container .menu .menu-item a .menu-item-description, .menu-evenement-container .menu .menu-item a .menu-item-description {
+  font-size: 1rem;
+}
+
+.menu-accueil-container .menu .menu-item a .menu-item-icone, .menu-evenement-container .menu .menu-item a .menu-item-icone {
+  border-bottom: 1px solid black;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -webkit-transform: scale(1) translateX(0px);
+          transform: scale(1) translateX(0px);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.menu-accueil-container .menu .menu-item:hover, .menu-evenement-container .menu .menu-item:hover {
+  background-color: #5cc3ff;
+}
+
+.menu-accueil-container .menu .menu-item:hover a, .menu-evenement-container .menu .menu-item:hover a {
+  color: #005ec9;
+}
+
+.menu-item:hover ~ .menu-item-icone {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
 }
 
 .site_footer {
@@ -1461,5 +1623,47 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
             transform: translateX(0);
     opacity: 1;
   }
+}
+
+.menu-accueil-container .menu .accueil_cours:hover .menu-item-icone, .menu-evenement-container .menu .accueil_cours:hover .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=eye");
+  -webkit-transform: scale(1.2) translateY(-2px);
+          transform: scale(1.2) translateY(-2px);
+}
+
+.menu-accueil-container .menu .accueil_aide:hover .menu-item-icone, .menu-evenement-container .menu .accueil_aide:hover .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=flame-bold");
+  -webkit-transform: scale(1.2) translateY(-2px);
+          transform: scale(1.2) translateY(-2px);
+}
+
+.menu-accueil-container .menu .accueil_prof:hover .menu-item-icone, .menu-evenement-container .menu .accueil_prof:hover .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bookmark");
+  -webkit-transform: scale(1.2) translateY(-2px);
+          transform: scale(1.2) translateY(-2px);
+}
+
+.menu-accueil-container .menu .accueil_joindre:hover .menu-item-icone, .menu-evenement-container .menu .accueil_joindre:hover .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=code-review-bold");
+  -webkit-transform: scale(1.2) translateY(-2px);
+          transform: scale(1.2) translateY(-2px);
+}
+
+.menu-accueil-container .menu .accueil_journee:hover .menu-item-icone, .menu-evenement-container .menu .accueil_journee:hover .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=container-bold");
+  -webkit-transform: scale(1.2) translateY(-2px);
+          transform: scale(1.2) translateY(-2px);
+}
+
+.menu-accueil-container .menu .accueil_porte:hover .menu-item-icone, .menu-evenement-container .menu .accueil_porte:hover .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools");
+  -webkit-transform: scale(1.2) translateY(-2px);
+          transform: scale(1.2) translateY(-2px);
+}
+
+.menu-accueil-container .menu .accueil_projet:hover .menu-item-icone, .menu-evenement-container .menu .accueil_projet:hover .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=thumbsup");
+  -webkit-transform: scale(1.2) translateY(-2px);
+          transform: scale(1.2) translateY(-2px);
 }
 /*# sourceMappingURL=style.css.map */

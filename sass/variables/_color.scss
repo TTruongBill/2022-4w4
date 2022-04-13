@@ -21,7 +21,13 @@ $color__link_header: #5580f8;
 $color__link_header-visited: #530083; 
 $color__link_header-hover: #49719e; 
 
+//Couleur titre
 $color__titre_principale: black;
 $color__titre_secondaire: black;
 $color__titre_terniaire: black;
 $color__titre_paragraphe: black;
+
+$color_bouton_background: rgb(104, 200, 255);
+$color_bouton_color: rgb(0, 73, 122);
+$color_bouton_background--hover: rgb(92, 195, 255);
+$color_bouton_color--hover:rgb(0, 94, 201);
