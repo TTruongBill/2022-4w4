@@ -360,6 +360,7 @@ Layout general
         grid-template-areas: "header header" "sidebar main" "footer footer";
   }
   .home {
+    gap: 0px;
         grid-template-areas: "sidebar sidebar"	 "header header" "main main" "footer footer";
     overflow-x: hidden;
   }
