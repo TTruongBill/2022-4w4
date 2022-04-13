@@ -14,7 +14,6 @@
 
         .accueil_cours .menu-item-icone{ 
             background-image: url("https://s2.svgbox.net/octicons.svg?ic=eye");
-            
         }
         .accueil_aide .menu-item-icone{
             background-image: url("https://s2.svgbox.net/octicons.svg?ic=flame-bold");
@@ -39,9 +38,7 @@
             padding: 10px;
             margin: 10px;
             background-color: $color_bouton_background;
-            border-radius: 10%;
-            transform: translateY(0px);
-            transition: transform 2s;            
+            border-radius: 10%;      
             @media screen and (min-width: $largeur__media-desktop1){
                 width: 20%;
                 margin: 0;
@@ -69,8 +66,8 @@
                     background-repeat: no-repeat;
                     background-position: center center;
                     background-size: cover;
-                    transform: translateY(0px);
-                    transition: transform 2s;
+                    transform: scale(1) translateX(0px);
+                    transition: transform 0.3s;
                     
                 }
             }

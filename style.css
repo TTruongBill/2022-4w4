@@ -1023,12 +1023,6 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   margin: 10px;
   background-color: #68c8ff;
   border-radius: 10%;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-  -webkit-transition: -webkit-transform 2s;
-  transition: -webkit-transform 2s;
-  transition: transform 2s;
-  transition: transform 2s, -webkit-transform 2s;
 }
 
 @media screen and (min-width: 900px) {
@@ -1072,12 +1066,12 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-  -webkit-transition: -webkit-transform 2s;
-  transition: -webkit-transform 2s;
-  transition: transform 2s;
-  transition: transform 2s, -webkit-transform 2s;
+  -webkit-transform: scale(1) translateX(0px);
+          transform: scale(1) translateX(0px);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .menu-accueil-container .menu .menu-item:hover, .menu-evenement-container .menu .menu-item:hover {
@@ -1630,7 +1624,45 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   }
 }
 
-.menu-item ~ .menu-item-icone:hover {
-  background-color: red;
+.menu-accueil-container .menu .accueil_cours:hover .menu-item-icone, .menu-evenement-container .menu .accueil_cours:hover .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=eye");
+  -webkit-transform: scale(1.2) translateY(-2px);
+          transform: scale(1.2) translateY(-2px);
+}
+
+.menu-accueil-container .menu .accueil_aide:hover .menu-item-icone, .menu-evenement-container .menu .accueil_aide:hover .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=flame-bold");
+  -webkit-transform: scale(1.2) translateY(-2px);
+          transform: scale(1.2) translateY(-2px);
+}
+
+.menu-accueil-container .menu .accueil_prof:hover .menu-item-icone, .menu-evenement-container .menu .accueil_prof:hover .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bookmark");
+  -webkit-transform: scale(1.2) translateY(-2px);
+          transform: scale(1.2) translateY(-2px);
+}
+
+.menu-accueil-container .menu .accueil_joindre:hover .menu-item-icone, .menu-evenement-container .menu .accueil_joindre:hover .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=code-review-bold");
+  -webkit-transform: scale(1.2) translateY(-2px);
+          transform: scale(1.2) translateY(-2px);
+}
+
+.menu-accueil-container .menu .accueil_journee:hover .menu-item-icone, .menu-evenement-container .menu .accueil_journee:hover .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=container-bold");
+  -webkit-transform: scale(1.2) translateY(-2px);
+          transform: scale(1.2) translateY(-2px);
+}
+
+.menu-accueil-container .menu .accueil_porte:hover .menu-item-icone, .menu-evenement-container .menu .accueil_porte:hover .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools");
+  -webkit-transform: scale(1.2) translateY(-2px);
+          transform: scale(1.2) translateY(-2px);
+}
+
+.menu-accueil-container .menu .accueil_projet:hover .menu-item-icone, .menu-evenement-container .menu .accueil_projet:hover .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=thumbsup");
+  -webkit-transform: scale(1.2) translateY(-2px);
+          transform: scale(1.2) translateY(-2px);
 }
 /*# sourceMappingURL=style.css.map */

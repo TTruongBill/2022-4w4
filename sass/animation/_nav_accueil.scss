@@ -1,4 +1,34 @@
-.menu-item ~ .menu-item-icone:hover{
-    background-color: red;
+.menu-accueil-container, .menu-evenement-container {
+    .menu {
+        .accueil_cours:hover .menu-item-icone{ 
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=eye");
+            transform: scale(1.2) translateY(-2px);
+            
+        }
+        .accueil_aide:hover .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=flame-bold");
+            transform: scale(1.2) translateY(-2px);
+        }
+        .accueil_prof:hover .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=bookmark");
+            transform: scale(1.2) translateY(-2px);
+        }
+        .accueil_joindre:hover .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=code-review-bold");
+            transform: scale(1.2) translateY(-2px);
+        }
+        .accueil_journee:hover .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=container-bold");
+            transform: scale(1.2) translateY(-2px);
+        }
+        .accueil_porte:hover .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools");
+            transform: scale(1.2) translateY(-2px);
+        }
+        .accueil_projet:hover .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=thumbsup");
+            transform: scale(1.2) translateY(-2px);
+        }
+    }
 }
 
