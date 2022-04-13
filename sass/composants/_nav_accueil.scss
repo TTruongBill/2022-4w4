@@ -1,6 +1,7 @@
 .menu-accueil-container, .menu-evenement-container {//nav
     display: flex;
     justify-content: center;
+
     .menu {//ul
         display: flex;
         flex-direction: column;
@@ -39,8 +40,8 @@
             margin: 10px;
             background-color: $color_bouton_background;
             border-radius: 10%;
-            
-            
+            transform: translateY(0px);
+            transition: transform 2s;            
             @media screen and (min-width: $largeur__media-desktop1){
                 width: 20%;
                 margin: 0;
@@ -68,6 +69,9 @@
                     background-repeat: no-repeat;
                     background-position: center center;
                     background-size: cover;
+                    transform: translateY(0px);
+                    transition: transform 2s;
+                    
                 }
             }
 
@@ -79,4 +83,8 @@
             }
         }
     }
+}
+
+.menu-item:hover ~ .menu-item-icone {
+    transform: translateY(10px);
 }

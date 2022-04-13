@@ -1023,6 +1023,12 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   margin: 10px;
   background-color: #68c8ff;
   border-radius: 10%;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
 }
 
 @media screen and (min-width: 900px) {
@@ -1066,6 +1072,12 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
 }
 
 .menu-accueil-container .menu .menu-item:hover, .menu-evenement-container .menu .menu-item:hover {
@@ -1074,6 +1086,11 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 
 .menu-accueil-container .menu .menu-item:hover a, .menu-evenement-container .menu .menu-item:hover a {
   color: #005ec9;
+}
+
+.menu-item:hover ~ .menu-item-icone {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
 }
 
 .site_footer {
@@ -1611,5 +1628,9 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
             transform: translateX(0);
     opacity: 1;
   }
+}
+
+.menu-item ~ .menu-item-icone:hover {
+  background-color: red;
 }
 /*# sourceMappingURL=style.css.map */
