@@ -3,7 +3,7 @@
     $mon_titre = get_the_title();
     $mon_titre_filtre = substr($mon_titre,8);
     $mon_sigle = substr($mon_titre,0,7);
-    $mon_heure = substr($mon_titre_filtre, strrpos($mon_titre_filtre,'('));
+    $mon_heure = get_field( "nombre_dheures" ) . " heures";
     $mon_titre_filtre = substr($mon_titre_filtre, 0, strrpos($mon_titre_filtre,'('));
     $mon_contenu = get_the_excerpt();
 ?>
