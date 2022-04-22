@@ -1,9 +1,11 @@
 
 <?php get_header(); ?>
     <main class="site_carte_main">
-
-    <a href="?cletri=title&ordre=desc">desc</a>
-    <a href="?cletri=title&ordre=asc">asc</a>
+    <div>
+        <a href="?cletri=title&ordre=desc">desc</a><br>
+        <a href="?cletri=title&ordre=asc">asc</a><br>
+    </div>
+    
         <?php  wp_nav_menu(array(
             "menu"=>"categorie_cours",
             "container" => "nav"));  ?>
