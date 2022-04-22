@@ -4,8 +4,8 @@
     $mon_titre_filtre = substr($mon_titre,8);
     $mon_sigle = substr($mon_titre,0,7);
     $mon_heure = get_field( "nombre_dheures" ) . " heures";
+    $departement = get_field("departement");
     $mon_titre_filtre = substr($mon_titre_filtre, 0, strrpos($mon_titre_filtre,'('));
-    $mon_contenu = get_the_excerpt();
 ?>
 <section class="carte <?php echo $categorie[1]->slug; ?>" >
 <?php the_post_thumbnail("thumbnail")?>
@@ -19,5 +19,7 @@
         <p class="carte_heure"><?php echo $mon_heure; ?></p>
     </section>
     <p class="carte_contenu"><?php echo $mon_contenu; ?></p>
+    <p class="carte_departement"><?php echo $departement; ?></p>
+
 </section>
             
