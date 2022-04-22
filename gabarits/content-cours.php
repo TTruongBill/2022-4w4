@@ -6,6 +6,7 @@
     $mon_heure = get_field( "nombre_dheures" ) . " heures";
     $departement = get_field("departement");
     $mon_titre_filtre = substr($mon_titre_filtre, 0, strrpos($mon_titre_filtre,'('));
+    $mon_contenu =wp_trim_words( get_the_content(), 15, "<a href='#'> La suite </a>") ;
 ?>
 <section class="carte <?php echo $categorie[1]->slug; ?>" >
 <?php the_post_thumbnail("thumbnail")?>
