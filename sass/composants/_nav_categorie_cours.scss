@@ -16,16 +16,28 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
         .menu-item { //li
             padding: 10px;
             margin : 15px 15px;
-            background-color: rgb(177, 217, 255);
+            background-color: $color_bouton_background;
             border: 1px solid rgb(120, 181, 221);
             border-radius: 10px;
             text-align: center;
             
              a {
+                 color : $color_bouton_color;
                  text-decoration: none;
              }
-        }
 
+             &:hover {
+                 background-color: $color_bouton_background--hover;
+
+                 a {
+                    color : $color_bouton_color--hover;
+                    text-decoration: none;
+                }
+             }
+
+        }
+    }
+    .current-menu-item{
 
     }
 }

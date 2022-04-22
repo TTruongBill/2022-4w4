@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /**
-theme name: 2022-4w4 Exercice- 3 -Truong Tien Tien Bill
+theme name: 2022-4w4 Exercice-4 -Truong Tien Tien Bill
 Author: Truong Tien Tien Bill
 Author URI: https://github.com/k1polo/2022-4w4
 Description : Ex3 dans le cadre du cours 4W4
@@ -955,6 +955,16 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 }
 
 .menu-categorie_cours-container .menu .menu-item a {
+  color: #00497a;
+  text-decoration: none;
+}
+
+.menu-categorie_cours-container .menu .menu-item:hover {
+  background-color: #5cc3ff;
+}
+
+.menu-categorie_cours-container .menu .menu-item:hover a {
+  color: #005ec9;
   text-decoration: none;
 }
 
@@ -1022,7 +1032,7 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   width: 100%;
   padding: 10px;
   margin: 10px;
-  background-color: #68c8ff;
+  background-color: #b1d9ff;
   border-radius: 10%;
 }
 
