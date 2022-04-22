@@ -968,6 +968,15 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   text-decoration: none;
 }
 
+.menu-categorie_cours-container .menu .current-menu-item {
+  background-color: #0063a5;
+}
+
+.menu-categorie_cours-container .menu .current-menu-item a {
+  color: #7ccfff;
+  text-decoration: none;
+}
+
 .menu-accueil-container, .menu-evenement-container {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -36,8 +36,14 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
              }
 
         }
+        .current-menu-item{
+            background-color: $color_bouton_background--current;
+    
+            a {
+               color : $color_bouton_color--current;
+               text-decoration: none;
+           }
+        }
     }
-    .current-menu-item{
-
-    }
+    
 }
