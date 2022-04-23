@@ -18,7 +18,7 @@ function cidw_4W4_enqueue(){
                     get_template_directory_uri() . '/javascript/boite-modale.js', 
                     array(), 
                     filemtime(get_template_directory() . '/javascript/boite-modale.js'), 
-                    false);
+                    true);
 }
 
 add_action("wp_enqueue_scripts", "cidw_4W4_enqueue");
