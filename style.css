@@ -1526,6 +1526,10 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   }
 }
 
+.evenement_endroit {
+  font-weight: bold;
+}
+
 /*----------------------------------- ANIMATIONS -----------------*/
 .animation_contenu {
   font-size: clamp(1rem, 2vw, 1.4rem);
