@@ -19,6 +19,13 @@
         <p>Copyright &copy 2022 - Truong, Tien Tien Bill. Tous droits réservés </p>
     </div>
 </footer>		
+
+<div class="boite_modale">
+    <button class="boite_modale_fermeture">X</button>
+    <p class="boite_modale_texte">
+        Ceci est un premiet test de boîte modale
+    </p>
+</div>
 <?php wp_footer(); ?>
 
 </body>
