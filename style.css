@@ -728,6 +728,7 @@ h6 {
   background-color: white;
   color: black;
   width: 100vw;
+  position: relative;
 }
 
 .site_main {
@@ -1528,6 +1529,25 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 
 .evenement_endroit {
   font-weight: bold;
+}
+
+.boite_modale {
+  position: fixed;
+  border: 5px solid #aaa;
+  background-color: #f00;
+  width: 50vw;
+  height: 50vh;
+  top: 25vh;
+  left: 25vw;
+  -webkit-transform: scale(0.1);
+          transform: scale(0.1);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.boite_modale:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 /*----------------------------------- ANIMATIONS -----------------*/
