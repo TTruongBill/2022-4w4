@@ -1539,13 +1539,13 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   height: 50vh;
   top: 25vh;
   left: 25vw;
-  -webkit-transform: scale(0.1);
-          transform: scale(0.1);
+  -webkit-transform: scale(0);
+          transform: scale(0);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-.boite_modale:hover {
+.ouvrir {
   -webkit-transform: scale(1);
           transform: scale(1);
 }

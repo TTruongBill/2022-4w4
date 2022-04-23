@@ -14,7 +14,7 @@ function cidw_4W4_enqueue(){
                     family=Roboto&display=swap",
                     false);
 
-    wp_enqueue_style('cidw-4w4-boite-modale', 
+    wp_enqueue_script('cidw-4w4-boite-modale', 
                     get_template_directory_uri() . '/javascript/boite-modale.js', 
                     array(), 
                     filemtime(get_template_directory() . '/javascript/boite-modale.js'), 
