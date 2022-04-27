@@ -5,9 +5,10 @@
     $mon_heure = get_field( "nombre_dheures" ) . " heures";
     $departement = get_field("departement");
     $mon_titre_filtre = substr($mon_titre_filtre, 0, strrpos($mon_titre_filtre,'('));
-    $mon_contenu =wp_trim_words( get_the_content(), 15, "<a class='carte_contenu_ouvrir' href='#'> La suite </a>") ;
+    $mon_contenu = get_the_content();
 ?>
 <section class="carte <?php echo $categorie[1]->slug; ?>" >
+<code class="carte_invisible"><?= $mon_contenu; ?></code>
 <?php the_post_thumbnail("thumbnail")?>
     <h3 class="carte_titre" >
         <a href="<?php echo get_permalink(); ?>">
@@ -17,7 +18,7 @@
     <section class="carte_info">
         <p class="carte_heure"><?php echo $mon_heure; ?></p>
     </section>
-    <p class="carte_contenu"><?php echo $mon_contenu; ?></p>
+    <p class="carte_contenu"><?php echo wp_trim_words($mon_contenu, 15, "<a class='carte_contenu_ouvrir' href='#'> La suite </a>"); ?></p>
     <p class="carte_departement"><?php echo $departement; ?></p>
 
 </section>

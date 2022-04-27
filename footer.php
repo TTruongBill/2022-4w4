@@ -23,8 +23,9 @@
 <div class="boite_modale">
     <button class="boite_modale_fermeture">X</button>
     <p class="boite_modale_texte">
-        Ceci est un premiet test de boîte modale
+        <?php the_content(); ?>
     </p>
+
 </div>
 <?php wp_footer(); ?>
 

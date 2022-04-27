@@ -882,6 +882,10 @@ h6 {
   }
 }
 
+.carte_invisible {
+  display: none;
+}
+
 .carte_titre {
   font-size: 1.5rem;
   color: black;

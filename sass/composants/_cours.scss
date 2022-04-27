@@ -108,8 +108,12 @@
     @media screen and (min-width: $largeur__media-desktop2) {
         width: 30%;
     }
-}
 
+    
+}
+.carte_invisible {
+    display: none;
+}
 .carte_titre {
     font-size: 1.5rem;
     color: rgb(0, 0, 0);
