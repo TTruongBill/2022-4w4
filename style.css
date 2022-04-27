@@ -1591,7 +1591,7 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   background-color: #00495f;
   width: 90%;
   height: 90%;
-  top: 8%;
+  top: 5%;
   left: 5%;
   -webkit-transform: scale(0);
           transform: scale(0);
@@ -1603,8 +1603,8 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   .boite_modale {
     width: 75%;
     height: 75%;
-    top: 15%;
-    left: 15%;
+    top: 13%;
+    left: 13%;
   }
 }
 
