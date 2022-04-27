@@ -345,6 +345,10 @@ points de rupture pour les medias query
 Layout general
 */
 /*----------------------------------- LAYOUT -----------------*/
+#wpadminbar {
+  position: fixed;
+}
+
 .site {
   display: -ms-grid;
   display: grid;
@@ -1543,14 +1547,32 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   position: fixed;
   border: 5px solid #023544;
   background-color: #00495f;
-  width: 50vw;
-  height: 50vh;
-  top: 25vh;
-  left: 25vw;
+  width: 90%;
+  height: 90%;
+  top: 8%;
+  left: 5%;
   -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 570px) {
+  .boite_modale {
+    width: 75%;
+    height: 75%;
+    top: 15%;
+    left: 15%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .boite_modale {
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left: 25%;
+  }
 }
 
 .boite_modale_fermeture {

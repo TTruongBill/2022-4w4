@@ -2,6 +2,9 @@
 <?php get_header(); ?>
 <main class="site_main">
     <?php if(have_posts()) : the_post(); ?>
+    <?php if( get_field('image') ): ?>
+    <img src="<?php the_field('image'); ?>" />
+<?php endif; ?>
     <h1 class="page_main_titre">
         <?php the_title();?>
     </h1>

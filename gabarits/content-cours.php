@@ -18,7 +18,7 @@
     <section class="carte_info">
         <p class="carte_heure"><?php echo $mon_heure; ?></p>
     </section>
-    <p class="carte_contenu"><?php echo wp_trim_words($mon_contenu, 15, "<a class='carte_contenu_ouvrir' href='#'> La suite </a>"); ?></p>
+    <p class="carte_contenu"><?php echo wp_trim_words($mon_contenu, 15, "<button class='carte_contenu_ouvrir'> La suite </button>"); ?></p>
     <p class="carte_departement"><?php echo $departement; ?></p>
 
 </section>
