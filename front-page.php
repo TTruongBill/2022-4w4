@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-    <main class="site_main_front_page">
+    <main class="site_main_front_page" style="background-color:<?= get_theme_mod("background_body");?>;">
         
         <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
         <h1 class="main_titre animation_titre">
