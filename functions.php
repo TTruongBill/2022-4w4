@@ -14,6 +14,11 @@ function cidw_4W4_enqueue(){
                     family=Roboto&display=swap",
                     false);
 
+    wp_enqueue_script('cidw-4w4-boite-modale', 
+                    get_template_directory_uri() . '/javascript/boite-modale.js', 
+                    array(), 
+                    filemtime(get_template_directory() . '/javascript/boite-modale.js'), 
+                    true);
 }
 
 add_action("wp_enqueue_scripts", "cidw_4W4_enqueue");
@@ -125,5 +130,41 @@ function cidw_4W4_add_theme_support(){
     ) );
 }
 add_action('after_setup_theme', 'cidw_4W4_add_theme_support');
+/**
+ * Modifie la requête global de WP_query.
+ * 
+ * @param WP_query $query : Objet contenant la requête global.
+ * @return WP_query $query. 
+ */
+function cidw_4w4_pre_get_posts(WP_Query $query)
+{
+    if (is_admin() || !is_main_query() || !is_category(array('cours','web','jeu','design','utilitaire','creation-3d','video'))   )
+    {
+        
+        return $query;
+    }        
+    else
+    {
+        $ordre = get_query_var('ordre');
+        $cle = get_query_var('cletri');       
+        $query->set('order',  $ordre);
+        $query->set('orderby', $cle);
+
+        $query->set('postperpage','-1');
+        
+        return $query;
+    }
+}
+
+
+function cidw_4w4_query_vars($params){
+    $params[] = "cletri";
+    $params[] = "ordre";
+    return $params;
+}
+add_action('pre_get_posts', 'cidw_4w4_pre_get_posts');
+/* Le hook «pre_get_posts» nous permet d'alterer les composante de la requête WP_query */
+add_filter('query_vars', 'cidw_4w4_query_vars' );
+/* Le hook «query_vars» nous permet d'alterer les arguments de l'URL */
 
 ?>

@@ -1,3 +1,26 @@
+@mixin navCours(){
+            padding: 10px;
+            margin : 15px 15px;
+            background-color: $color_bouton_background;
+            border: 1px solid rgb(120, 181, 221);
+            border-radius: 10px;
+            text-align: center;
+            
+             a {
+                 color : $color_bouton_color;
+                 text-decoration: none;
+             }
+
+             &:hover {
+                 background-color: $color_bouton_background--hover;
+
+                 a {
+                    color : $color_bouton_color--hover;
+                    text-decoration: none;
+                }
+             }
+}
+
 /* --------------------------------------------------------------
 Navigation pour la page category.php   boutons de catégorie  groupe-1
 ----------------------------------------------------------------- */
@@ -14,18 +37,31 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
             flex-wrap: wrap;
         }
         .menu-item { //li
-            padding: 10px;
-            margin : 15px 15px;
-            background-color: rgb(177, 217, 255);
-            border: 1px solid rgb(120, 181, 221);
-            border-radius: 10px;
-            text-align: center;
-            
-             a {
-                 text-decoration: none;
-             }
+            @include navCours()
         }
 
-
+        .current-menu-item{
+            background-color: $color_bouton_background--current;
+    
+            a {
+               color : $color_bouton_color--current;
+               text-decoration: none;
+           }
+        }
     }
+    
+}
+
+.ordre_cours {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ordre {
+    @include navCours();
+    text-decoration: none;
+    width: 70px;
+    height: 40px;
 }

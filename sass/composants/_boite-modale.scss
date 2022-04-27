@@ -1,0 +1,41 @@
+.boite_modale{
+    position : fixed;
+    border: 5px solid rgb(2, 53, 68);
+    background-color:  rgb(0, 73, 95);
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left : 5%;
+    transform: scale(0);
+    transition: all 0.5s ease-in-out;
+
+    @media screen and (min-width: $largeur__media-tablette) {
+        width: 75%;
+        height: 75%;
+        top: 13%;
+        left : 13%;
+    }
+
+    @media screen and (min-width: $largeur__media-desktop1) {
+        width: 50%;
+        height: 50%;
+        top: 25%;
+        left : 25%;
+    }
+
+    &_fermeture{ 
+        background: none;
+        border: none;
+        color: white;
+    }
+    &_texte{
+        color: rgb(111, 184, 206);
+
+    }
+
+
+}
+
+.ouvrir{
+    transform: scale(1);
+}

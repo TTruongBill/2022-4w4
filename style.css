@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /**
-theme name: 2022-4w4 Exercice- 3 -Truong Tien Tien Bill
+theme name: 2022-4w4 Exercice-4 -Truong Tien Tien Bill
 Author: Truong Tien Tien Bill
 Author URI: https://github.com/k1polo/2022-4w4
 Description : Ex3 dans le cadre du cours 4W4
@@ -345,6 +345,10 @@ points de rupture pour les medias query
 Layout general
 */
 /*----------------------------------- LAYOUT -----------------*/
+#wpadminbar {
+  position: fixed;
+}
+
 .site {
   display: -ms-grid;
   display: grid;
@@ -728,6 +732,7 @@ h6 {
   background-color: white;
   color: black;
   width: 100vw;
+  position: relative;
 }
 
 .site_main {
@@ -881,6 +886,10 @@ h6 {
   }
 }
 
+.carte_invisible {
+  display: none;
+}
+
 .carte_titre {
   font-size: 1.5rem;
   color: black;
@@ -955,6 +964,67 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 }
 
 .menu-categorie_cours-container .menu .menu-item a {
+  color: #00497a;
+  text-decoration: none;
+}
+
+.menu-categorie_cours-container .menu .menu-item:hover {
+  background-color: #5cc3ff;
+}
+
+.menu-categorie_cours-container .menu .menu-item:hover a {
+  color: #005ec9;
+  text-decoration: none;
+}
+
+.menu-categorie_cours-container .menu .current-menu-item {
+  background-color: #0063a5;
+}
+
+.menu-categorie_cours-container .menu .current-menu-item a {
+  color: #7ccfff;
+  text-decoration: none;
+}
+
+.ordre_cours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ordre {
+  padding: 10px;
+  margin: 15px 15px;
+  background-color: #b1d9ff;
+  border: 1px solid #78b5dd;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 70px;
+  height: 40px;
+}
+
+.ordre a {
+  color: #00497a;
+  text-decoration: none;
+}
+
+.ordre:hover {
+  background-color: #5cc3ff;
+}
+
+.ordre:hover a {
+  color: #005ec9;
   text-decoration: none;
 }
 
@@ -1022,7 +1092,7 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   width: 100%;
   padding: 10px;
   margin: 10px;
-  background-color: #68c8ff;
+  background-color: #b1d9ff;
   border-radius: 10%;
 }
 
@@ -1505,6 +1575,61 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   .carte_post {
     margin: 40px 0 0 0;
   }
+}
+
+.evenement_resume {
+  font-weight: bolder;
+}
+
+.evenement_endroit {
+  font-weight: bold;
+}
+
+.boite_modale {
+  position: fixed;
+  border: 5px solid #023544;
+  background-color: #00495f;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 570px) {
+  .boite_modale {
+    width: 75%;
+    height: 75%;
+    top: 13%;
+    left: 13%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .boite_modale {
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left: 25%;
+  }
+}
+
+.boite_modale_fermeture {
+  background: none;
+  border: none;
+  color: white;
+}
+
+.boite_modale_texte {
+  color: #6fb8ce;
+}
+
+.ouvrir {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 /*----------------------------------- ANIMATIONS -----------------*/

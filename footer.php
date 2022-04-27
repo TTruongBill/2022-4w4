@@ -19,6 +19,14 @@
         <p>Copyright &copy 2022 - Truong, Tien Tien Bill. Tous droits réservés </p>
     </div>
 </footer>		
+
+<div class="boite_modale">
+    <button class="boite_modale_fermeture">X</button>
+    <p class="boite_modale_texte">
+        
+    </p>
+
+</div>
 <?php wp_footer(); ?>
 
 </body>
