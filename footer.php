@@ -23,7 +23,7 @@
 <div class="boite_modale">
     <button class="boite_modale_fermeture">X</button>
     <p class="boite_modale_texte">
-        <?php the_content(); ?>
+        
     </p>
 
 </div>
