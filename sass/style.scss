@@ -1,5 +1,5 @@
 /**
-theme name: 2022-4w4 Exercice-4 -Truong Tien Tien Bill
+theme name: 2022-4w4 TP2 -Truong Tien Tien Bill
 Author: Truong Tien Tien Bill
 Author URI: https://github.com/k1polo/2022-4w4
 Description : Ex4 dans le cadre du cours 4W4
@@ -37,4 +37,5 @@ Text Domain : cidw-4w4
 @import "composants/boite-modale";
 /*----------------------------------- ANIMATIONS -----------------*/
 @import "animation/entete";
-@import "animation/nav_accueil"
+@import "animation/nav_accueil";
+@import "animation/burger";
