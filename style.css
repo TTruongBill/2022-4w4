@@ -506,6 +506,9 @@ h6 {
 
 .site_barre {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .site_barre > nav {
@@ -538,7 +541,7 @@ h6 {
   margin: 5px;
 }
 
-#burger {
+.burger {
   position: absolute;
   top: 5px;
   left: 5px;
@@ -549,14 +552,15 @@ h6 {
   transition: transform .3s;
   transition: transform .3s, -webkit-transform .3s;
   z-index: 2;
+  margin: 0 0 10px 10px;
 }
 
-#chk-burger:checked ~ #burger {
+#chk-burger:checked ~ .burger {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
-#chk-burger:checked ~ #burger ~ nav {
+#chk-burger:checked ~ .burger ~ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

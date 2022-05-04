@@ -4,6 +4,7 @@
 
 .site_barre {
     position: relative;
+    display: flex;
 }
 .site_barre > nav {
     display: none;
@@ -22,20 +23,21 @@
     background-color: rgb(197, 241, 255);
     margin: 5px;
 }
-#burger {
+.burger {
     position : absolute;
     top: 5px;
     left: 5px;
     transform : rotate(0deg);
     transition : transform .3s;
     z-index: 2;
+    margin: 0 0 10px 10px;
 }
 
-#chk-burger:checked ~ #burger {
+#chk-burger:checked ~ .burger {
     transform : rotate(90deg);
 }
 
-#chk-burger:checked ~ #burger ~ nav {
+#chk-burger:checked ~ .burger ~ nav {
     display: flex;
     flex-direction: column; 
 }
