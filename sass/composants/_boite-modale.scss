@@ -2,12 +2,34 @@
     position : fixed;
     border: 5px solid rgb(2, 53, 68);
     background-color:  rgb(0, 73, 95);
+    
+    transform: scale(0);
+    transition: all 0.5s ease-in-out;
+
+
+    &_fermeture{ 
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: none;
+        border: none;
+        color: white;
+        z-index: 1;
+    }
+    &_texte{
+        color: rgb(111, 184, 206);
+
+    }
+
+
+}
+
+.boite_modale {
+
     width: 90%;
     height: 90%;
     top: 5%;
     left : 5%;
-    transform: scale(0);
-    transition: all 0.5s ease-in-out;
 
     @media screen and (min-width: $largeur__media-tablette) {
         width: 75%;
@@ -22,53 +44,18 @@
         top: 25%;
         left : 25%;
     }
-
-    &_fermeture{ 
-        background: none;
-        border: none;
-        color: white;
-    }
-    &_texte{
-        color: rgb(111, 184, 206);
-
-    }
-
-
 }
-
 .boite_carrousel{
     width: 75%;
     height: 75%;
     top: 12.5%;
     left: 12.5%;
 
-    &_navigation{
-        position:absolute;
-        display: flex;
-        justify-content: center;
-        bottom: 0;
-        width: 100%;
-        border: 2px solid red;
-        z-index:1;
-
-        button{
-            width: 20px;
-            height: 20px;
-            margin: 5px 10px;
-            border-radius: 100%;
-            
-            &:focus{
-                background-color: #000;
-            }
-        }
-        
-    }
-
-    &_img {
+    img {
         position: absolute;
+        object-fit: cover;
         top: 0;
         bottom: 0;
-        object-fit: cover;
         width: 100%;
         height: 100%;
     }
