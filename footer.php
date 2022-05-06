@@ -24,7 +24,7 @@
     <button class="boite_modale_fermeture">X</button>
     <article class="boite_modale_texte"></article>
 </div>
-<div class="boite_modale">
+<div class="boite_carrousel">
     <button class="boite_carrousel_fermeture">X</button>
     <article class="boite_carrousel_texte"></article>
 </div>
