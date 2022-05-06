@@ -7,6 +7,21 @@
     <title>Document</title>
     <?php wp_head(); ?>
 </head> 
+<style>
+    .site_footer{
+        background-color:<?= get_theme_mod("background_footer");?>
+    }
+    
+    .site_carte_main{
+        background-color: <?= get_theme_mod("background_body");?>
+    }
+
+    .site_main_front_page {
+        background-color: <?= get_theme_mod("background_body");?>
+    }
+
+
+</style>
 <body <?php body_class("site"); ?>>
 <header class="site_header">
     <section class="site_header_title">

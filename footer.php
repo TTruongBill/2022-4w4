@@ -1,4 +1,4 @@
-<footer class="site_footer" style="background-color:<?= get_theme_mod("background_footer");?>;">
+<footer class="site_footer">
     <div class="site_footer_colonne"> 
         <section class="site_footer_colonne_info">
             <section class="footer_adresse"><?php get_sidebar("pied_page_colonne_1")?></section>
