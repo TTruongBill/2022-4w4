@@ -4,7 +4,6 @@
 
 .site_barre {
     position: relative;
-    display: flex;
 }
 .site_barre > nav {
     display: none;
@@ -62,14 +61,14 @@
    
 }
 @media screen and (min-width: $largeur__media-tablette) {
-    .site #burger {
+    .site .burger {
         display: none;
     }
     .site .menu-principal-container{
         display: block;
     }
 
-    .home #burger {
+    .home .burger {
         display: block;
     }
     .home .menu-principal-container{
