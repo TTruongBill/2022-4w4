@@ -1653,6 +1653,30 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   left: 12.5%;
 }
 
+.boite_carrousel_nav {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: 10px;
+  width: 100%;
+  z-index: 1;
+}
+
+.boite_carrousel_nav button {
+  width: 20px;
+  height: 20px;
+  margin: 5px 10px;
+  border-radius: 100%;
+}
+
+.boite_carrousel_nav button:focus {
+  background-color: #003e7c;
+}
+
 .boite_carrousel img {
   position: absolute;
   -o-object-fit: cover;

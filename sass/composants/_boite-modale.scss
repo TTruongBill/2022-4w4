@@ -51,6 +51,26 @@
     top: 12.5%;
     left: 12.5%;
 
+    &_nav{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        bottom: 10px;
+        width: 100%;
+        z-index: 1;
+
+        button{
+            width: 20px;
+            height: 20px;
+            margin: 5px 10px;
+            border-radius: 100%;
+
+            &:focus{
+                background-color: rgb(0, 62, 124);
+            }
+        }
+    }
+
     img {
         position: absolute;
         object-fit: cover;

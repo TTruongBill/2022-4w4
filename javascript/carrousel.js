@@ -2,7 +2,7 @@
     let boite_carrousel = document.querySelector(".boite_carrousel")
     let galerie_img = document.querySelectorAll('.galerie .wp-block-image img')
     let boite_carrousel_ferme = document.querySelector(".boite_carrousel_fermeture")
-    let boite_carrousel_nav = document.querySelector(".boie_carrousel_nav")
+    let boite_carrousel_nav = document.querySelector(".boite_carrousel_nav")
 
     boite_carrousel_ferme.addEventListener('mousedown', function(){
       boite_carrousel.classList.remove('ouvrir')
