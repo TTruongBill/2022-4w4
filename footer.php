@@ -22,10 +22,12 @@
 
 <div class="boite_modale">
     <button class="boite_modale_fermeture">X</button>
-    <p class="boite_modale_texte">
-        
-    </p>
-
+    <article class="boite_modale_texte"></article>
+</div>
+<div class="boite_carrousel">
+    <button class="boite_carrousel_fermeture">X</button>
+    <section class="boite_carrousel_nav"></section>
+    <section class="boite_carrousel_img"></section>
 </div>
 <?php wp_footer(); ?>
 

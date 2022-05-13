@@ -1,4 +1,8 @@
 <?php
+
+require_once("options/apparence.php");
+
+
 function cidw_4W4_enqueue(){
     //wp_enqueue_style('style_css', get_template_directory_uri());
     wp_enqueue_style('style_css', 
@@ -14,11 +18,26 @@ function cidw_4W4_enqueue(){
                     family=Roboto&display=swap",
                     false);
 
-    wp_enqueue_script('cidw-4w4-boite-modale', 
+    wp_register_script('cidw-4w4-boite-modale', 
                     get_template_directory_uri() . '/javascript/boite-modale.js', 
                     array(), 
                     filemtime(get_template_directory() . '/javascript/boite-modale.js'), 
                     true);
+
+    wp_register_script('cidw-4w4-carrousel',
+                    get_template_directory_uri() . '/javascript/carrousel.js',
+                    array(),
+                    filemtime(get_template_directory() . '/javascript/carrousel.js'),
+                    true);
+
+                    if(is_category('cours')){
+                        wp_enqueue_script('cidw-4w4-boite-modale');
+                    }
+                    if(is_front_page()){
+                        wp_enqueue_script('cidw-4w4-carrousel');
+                    }
+
+
 }
 
 add_action("wp_enqueue_scripts", "cidw_4W4_enqueue");

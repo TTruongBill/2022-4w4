@@ -7,6 +7,21 @@
     <title>Document</title>
     <?php wp_head(); ?>
 </head> 
+<style>
+    .site_footer{
+        background-color:<?= get_theme_mod("background_footer");?>
+    }
+    
+    .site_carte_main{
+        background-color: <?= get_theme_mod("background_body");?>
+    }
+
+    .site_main_front_page {
+        background-color: <?= get_theme_mod("background_body");?>
+    }
+
+
+</style>
 <body <?php body_class("site"); ?>>
 <header class="site_header">
     <section class="site_header_title">
@@ -43,12 +58,10 @@
 <section class="site_barre">
 
 <input type="checkbox" id="chk-burger">
-<label for="chk-burger" id="burger">
-    <svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg" 
-    viewBox="0 0 20 20" fill="currentColor" color="#000">
-    <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
-    </svg>
-    
+<label for="chk-burger" class="burger">
+            <div class="burger__ligne"></div>
+            <div class="burger__ligne"></div>
+            <div class="burger__ligne"></div>
 </label>
         <?php 
         $icone = '<svg width="15px" height="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" color="#000000"><path d="M4.97 11.03a.75.75 0 111.06-1.06L11 14.94V2.75a.75.75 0 011.5 0v12.19l4.97-4.97a.75.75 0 111.06 1.06l-6.25 6.25a.75.75 0 01-1.06 0l-6.25-6.25zm-.22 9.47a.75.75 0 000 1.5h14.5a.75.75 0 000-1.5H4.75z"></path></svg>';

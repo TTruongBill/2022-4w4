@@ -22,7 +22,7 @@
     background-color: rgb(197, 241, 255);
     margin: 5px;
 }
-#burger {
+.burger {
     position : absolute;
     top: 5px;
     left: 5px;
@@ -31,13 +31,15 @@
     z-index: 2;
 }
 
-#chk-burger:checked ~ #burger {
+#chk-burger:checked ~ .burger {
     transform : rotate(90deg);
 }
 
-#chk-burger:checked ~ #burger ~ nav {
+#chk-burger:checked ~ .burger ~ nav {
     display: flex;
     flex-direction: column; 
+    width: 100%;
+    padding: 10px;
 }
 
 .menu {
@@ -59,14 +61,14 @@
    
 }
 @media screen and (min-width: $largeur__media-tablette) {
-    .site #burger {
+    .site .burger {
         display: none;
     }
     .site .menu-principal-container{
         display: block;
     }
 
-    .home #burger {
+    .home .burger {
         display: block;
     }
     .home .menu-principal-container{
