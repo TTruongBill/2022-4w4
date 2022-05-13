@@ -1877,7 +1877,7 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 }
 
 .burger {
-  margin: 0px 15px 15px 15px;
+  margin: 0px 15px 15px 0px;
   position: absolute;
   width: 2rem;
   height: 2rem;
