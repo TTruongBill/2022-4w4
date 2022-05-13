@@ -1616,10 +1616,8 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 }
 
 .boite_modale {
-  width: 100%;
-  height: 100%;
-  top: 5%;
-  left: 5%;
+  width: 100vw;
+  height: 100vh;
 }
 
 @media screen and (min-width: 570px) {
