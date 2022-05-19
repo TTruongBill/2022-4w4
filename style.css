@@ -1094,6 +1094,22 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=thumbsup");
 }
 
+.menu-accueil-container .menu .accueil_ .menu-item-icone, .menu-evenement-container .menu .accueil_ .menu-item-icone, .menu-atelier-container .menu .accueil_ .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=css");
+}
+
+.menu-accueil-container .menu .accueil_ .menu-item-icone, .menu-evenement-container .menu .accueil_ .menu-item-icone, .menu-atelier-container .menu .accueil_ .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=reactjs");
+}
+
+.menu-accueil-container .menu .accueil_web .menu-item-icone, .menu-evenement-container .menu .accueil_web .menu-item-icone, .menu-atelier-container .menu .accueil_web .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=html");
+}
+
+.menu-accueil-container .menu .accueil_git .menu-item-icone, .menu-evenement-container .menu .accueil_git .menu-item-icone, .menu-atelier-container .menu .accueil_git .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=git");
+}
+
 .menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item, .menu-atelier-container .menu .menu-item {
   width: 100%;
   padding: 10px;
