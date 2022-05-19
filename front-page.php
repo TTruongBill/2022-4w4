@@ -1,7 +1,6 @@
 <?php get_header(); ?>
     <main class="site_main_front_page">
-        
-        
+    
         <section class="pages_important">  
                 <h3>Le département TIM</h3>
                 <?php
@@ -11,6 +10,11 @@
                 <h3>Les événements</h3>
                 <?php
                 wp_nav_menu(array('menu'=>"evenement",
+                                    "container"=>"nav"));
+                ?>  
+                <h3>Les événements</h3>
+                <?php
+                wp_nav_menu(array('menu'=>"atelier",
                                     "container"=>"nav"));
                 ?>  
         </section>
