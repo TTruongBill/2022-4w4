@@ -1094,11 +1094,11 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=thumbsup");
 }
 
-.menu-accueil-container .menu .accueil_ .menu-item-icone, .menu-evenement-container .menu .accueil_ .menu-item-icone, .menu-atelier-container .menu .accueil_ .menu-item-icone {
+.menu-accueil-container .menu .accueil_css .menu-item-icone, .menu-evenement-container .menu .accueil_css .menu-item-icone, .menu-atelier-container .menu .accueil_css .menu-item-icone {
   background-image: url("https://s2.svgbox.net/files.svg?ic=css");
 }
 
-.menu-accueil-container .menu .accueil_ .menu-item-icone, .menu-evenement-container .menu .accueil_ .menu-item-icone, .menu-atelier-container .menu .accueil_ .menu-item-icone {
+.menu-accueil-container .menu .accueil_react .menu-item-icone, .menu-evenement-container .menu .accueil_react .menu-item-icone, .menu-atelier-container .menu .accueil_react .menu-item-icone {
   background-image: url("https://s2.svgbox.net/files.svg?ic=reactjs");
 }
 
@@ -1850,44 +1850,68 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   }
 }
 
-.menu-accueil-container .menu .accueil_cours:hover .menu-item-icone, .menu-evenement-container .menu .accueil_cours:hover .menu-item-icone {
+.menu-accueil-container .menu .accueil_cours:hover .menu-item-icone, .menu-evenement-container .menu .accueil_cours:hover .menu-item-icone, .menu-atelier-container .menu .accueil_cours:hover .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=eye");
   -webkit-transform: scale(1.2) translateY(-2px);
           transform: scale(1.2) translateY(-2px);
 }
 
-.menu-accueil-container .menu .accueil_aide:hover .menu-item-icone, .menu-evenement-container .menu .accueil_aide:hover .menu-item-icone {
+.menu-accueil-container .menu .accueil_aide:hover .menu-item-icone, .menu-evenement-container .menu .accueil_aide:hover .menu-item-icone, .menu-atelier-container .menu .accueil_aide:hover .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=flame-bold");
   -webkit-transform: scale(1.2) translateY(-2px);
           transform: scale(1.2) translateY(-2px);
 }
 
-.menu-accueil-container .menu .accueil_prof:hover .menu-item-icone, .menu-evenement-container .menu .accueil_prof:hover .menu-item-icone {
+.menu-accueil-container .menu .accueil_prof:hover .menu-item-icone, .menu-evenement-container .menu .accueil_prof:hover .menu-item-icone, .menu-atelier-container .menu .accueil_prof:hover .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=bookmark");
   -webkit-transform: scale(1.2) translateY(-2px);
           transform: scale(1.2) translateY(-2px);
 }
 
-.menu-accueil-container .menu .accueil_joindre:hover .menu-item-icone, .menu-evenement-container .menu .accueil_joindre:hover .menu-item-icone {
+.menu-accueil-container .menu .accueil_joindre:hover .menu-item-icone, .menu-evenement-container .menu .accueil_joindre:hover .menu-item-icone, .menu-atelier-container .menu .accueil_joindre:hover .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=code-review-bold");
   -webkit-transform: scale(1.2) translateY(-2px);
           transform: scale(1.2) translateY(-2px);
 }
 
-.menu-accueil-container .menu .accueil_journee:hover .menu-item-icone, .menu-evenement-container .menu .accueil_journee:hover .menu-item-icone {
+.menu-accueil-container .menu .accueil_journee:hover .menu-item-icone, .menu-evenement-container .menu .accueil_journee:hover .menu-item-icone, .menu-atelier-container .menu .accueil_journee:hover .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=container-bold");
   -webkit-transform: scale(1.2) translateY(-2px);
           transform: scale(1.2) translateY(-2px);
 }
 
-.menu-accueil-container .menu .accueil_porte:hover .menu-item-icone, .menu-evenement-container .menu .accueil_porte:hover .menu-item-icone {
+.menu-accueil-container .menu .accueil_porte:hover .menu-item-icone, .menu-evenement-container .menu .accueil_porte:hover .menu-item-icone, .menu-atelier-container .menu .accueil_porte:hover .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools");
   -webkit-transform: scale(1.2) translateY(-2px);
           transform: scale(1.2) translateY(-2px);
 }
 
-.menu-accueil-container .menu .accueil_projet:hover .menu-item-icone, .menu-evenement-container .menu .accueil_projet:hover .menu-item-icone {
+.menu-accueil-container .menu .accueil_projet:hover .menu-item-icone, .menu-evenement-container .menu .accueil_projet:hover .menu-item-icone, .menu-atelier-container .menu .accueil_projet:hover .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=thumbsup");
+  -webkit-transform: scale(1.2) translateY(-2px);
+          transform: scale(1.2) translateY(-2px);
+}
+
+.menu-accueil-container .menu .accueil_css:hover .menu-item-icone, .menu-evenement-container .menu .accueil_css:hover .menu-item-icone, .menu-atelier-container .menu .accueil_css:hover .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=css");
+  -webkit-transform: scale(1.2) translateY(-2px);
+          transform: scale(1.2) translateY(-2px);
+}
+
+.menu-accueil-container .menu .accueil_react:hover .menu-item-icone, .menu-evenement-container .menu .accueil_react:hover .menu-item-icone, .menu-atelier-container .menu .accueil_react:hover .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=reactjs");
+  -webkit-transform: scale(1.2) translateY(-2px);
+          transform: scale(1.2) translateY(-2px);
+}
+
+.menu-accueil-container .menu .accueil_web:hover .menu-item-icone, .menu-evenement-container .menu .accueil_web:hover .menu-item-icone, .menu-atelier-container .menu .accueil_web:hover .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=html");
+  -webkit-transform: scale(1.2) translateY(-2px);
+          transform: scale(1.2) translateY(-2px);
+}
+
+.menu-accueil-container .menu .accueil_git:hover .menu-item-icone, .menu-evenement-container .menu .accueil_git:hover .menu-item-icone, .menu-atelier-container .menu .accueil_git:hover .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=git");
   -webkit-transform: scale(1.2) translateY(-2px);
           transform: scale(1.2) translateY(-2px);
 }
