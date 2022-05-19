@@ -1,4 +1,4 @@
-.menu-accueil-container, .menu-evenement-container {
+.menu-accueil-container, .menu-evenement-container, .menu-atelier-container {
     .menu {
         .accueil_cours:hover .menu-item-icone{ 
             background-image: url("https://s2.svgbox.net/octicons.svg?ic=eye");
@@ -28,6 +28,22 @@
         .accueil_projet:hover .menu-item-icone{
             background-image: url("https://s2.svgbox.net/octicons.svg?ic=thumbsup");
             transform: scale(1.2) translateY(-2px);
+        }
+        .accueil_css:hover .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/files.svg?ic=css");
+            transform: scale(1.2) translateY(-2px);
+        }
+        .accueil_react:hover .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/files.svg?ic=reactjs");
+             transform: scale(1.2) translateY(-2px);
+        }
+        .accueil_web:hover .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/files.svg?ic=html");
+             transform: scale(1.2) translateY(-2px);
+        }
+        .accueil_git:hover .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/files.svg?ic=git");
+             transform: scale(1.2) translateY(-2px);
         }
     }
 }
